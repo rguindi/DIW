@@ -1,0 +1,20 @@
+h3, .comprar {
+
+    color: blue;
+    text-decoration: underline;
+
+}
+
+.viejo {
+    text-decoration: line-through;
+}
+
+.nuevo{
+    font-weight: bold;
+}
+
+#Tabla1, th, td {
+    border: 1px grey solid;
+    border-collapse: collapse;
+    
+}
