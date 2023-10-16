@@ -6,62 +6,82 @@
     <title>Colocar elementos</title>
 
     <style>
-#arriba{
-    background-color: red;
-    border: 1px solid;
-    
-    
 
-}
-
-#abajo{
-    background-color: rgb(46, 33, 33);
-    border: 1px solid;
-    
-}
-#izquierda{
+header{
     background-color: aquamarine;
-    width: 15%;
+}
+
+header ul li{
+    display: inline;
+    margin-left: 20px;
+    padding: 20px;
+    background-color: bisque;
+}
+#lista1{
+    position: absolute;
+    display: inline;
+    left: 130px;
+    top: 30px;
     
-   
-   
+}
+
+#lista2{
+    position: absolute;
+    display: inline;
+    right: 40px;
+    top: 30px;
+    
+}
+
+header img{
+    margin-left: 50px;
+    width: 100px;
 
 }
-#principal{
-    background-color: blueviolet;
-    width: 85%;
+
+footer{
+    position: absolute;
+    background-color: brown;
+    bottom: 0px;
+    width: 100%;
 }
 
     </style>
+
 </head>
+
+
 <body>
     <header>
-        <nav id="arriba">
-            <ul>
-                <li>Inicio</li>
-                <li>Fotos</li>
-                <li>Viceos</li>
-                <li>Login</li>
-            </ul>
-        </nav>
+       
+        <img src="img/ordenador.png" alt="No se encuentra imagen" >
+       
+        <ul id="lista1">
+            <li>Opcion 1</li>
+            <li>Opcion 2</li>
+            <li>Opcion 3</li>
+        </ul>
+
+        <ul id="lista2">
+            <li>Usuario</li>
+            <li>Contraseña</li>
+         
+        </ul>
+        
     </header>
     <main>
-        <section id="izquierda">
-            <article>articulo</article>
-            <article>articulo2</article>
-            <article>articuulo3</article>
-        </section>
-        <article id="principal">
-            <section>Hola q tal</section>
-        </article>
+        <nav>
+            <ul>
+                <li>Opcion 4</li>
+                <li>Opcion 5</li>
+                <li>Opcion 6</li>
+            </ul>
+        </nav>
+        
     </main>
     <footer>
-        <nav id="abajo">
-            <nav>
-                Nav Footer
-            </nav>
-        <address></address>
-    </nav>
+        <p>ESTE ES EL FOOTER</p>
     </footer>
 </body>
+
 </html>
