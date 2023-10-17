@@ -1,0 +1,39 @@
+
+header{
+    background-color: aquamarine;
+}
+
+header ul li{
+    display: inline;
+    margin-left: 20px;
+    padding: 20px;
+    background-color: bisque;
+}
+#lista1{
+    position: absolute;
+    display: inline;
+    left: 130px;
+    top: 30px;
+    
+}
+
+#lista2{
+    position: absolute;
+    display: inline;
+    right: 40px;
+    top: 30px;
+    
+}
+
+header img{
+    margin-left: 50px;
+    width: 100px;
+
+}
+
+footer{
+    position: absolute;
+    background-color: brown;
+    bottom: 0px;
+    width: 100%;
+}
