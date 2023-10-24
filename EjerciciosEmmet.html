@@ -69,7 +69,7 @@
   <h2>Crea una lista ordenada ol> con tres elementos de lista li>, numerados del 1 al 3 y con números romanos en lugar de árabes. </h2>
   ol>li{$}*3
   <h2>Genera una lista desordenada ul> con cuatro elementos de lista li>, numerados automáticamente pero con un formato personalizado, como "Item #1", "Item </h2>
-  ul>li{item $$}*4
+  ul>li{item $$}*4te
   <h2>Crea una lista ordenada ol> con cinco elementos de lista li>, numerados automáticamente pero en orden descendente. </h2>
   ol>li{$@-}*5
   <h2>Genera una lista desordenada ul> con seis elementos de lista li>, numerados automáticamente, pero omite un número específico en la secuencia. </h2>
@@ -78,6 +78,29 @@
   ol>li{item$@7}*3
   <h2>Genera una lista desordenada ul> con siete elementos de lista li>, numerados automáticamente en orden ascendente, pero con ceros delante, como "Item 01", "Item 02", "Item 03", etc. </h2>
   ul>li{item $$@-}*7
+
+  <h1>CUARTA PARTE</h1>
+  <h2>Crea un elemento div seguido de un elemento ul</h2>
+  div+ul
+  <h2>Genera un encabezado (header) que contenga un título (h1) seguido de un párrafo (p)</h2>
+  header>h1+p
+  <h2>Crea una estructura que incluya un elemento nav con una lista no ordenada (ul) dentro</h2>
+  nav>ul
+  <h2>Genera una sección (section) con un subtítulo (h2) dentro</h2>
+  section>h2
+  <h2>Crea un elemento div que contenga dos elementos span</h2>
+  div>span*2
+  <h2>Genera una lista de enlaces (ul) seguida de un encabezado (header)</h2>
+  ul+header
+  <h2>Crea un elemento article con un párrafo (p) dentro, seguido de tres encabezados (h1, h2, h3)</h2>
+  article>p+h1+h2+h3
+  <h2>Genera un footer seguido de un elemento nav con una lista no ordenada (ul) dentro.  </h2>
+  footer+nav>ul
+  <h2>Crea una estructura que incluya un elemento section con un párrafo (p) y, a continuación, 
+    un elemento aside. </h2>
+    section>p+aside
+    <h2>Genera una lista de definiciones (dl) que contenga tres pares de términos (dt) y descripciones (dd)</h2>
+    dl>dt*3+dd
 
 
 </body>
