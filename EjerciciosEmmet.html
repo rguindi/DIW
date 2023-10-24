@@ -8,6 +8,8 @@
 </head>
 
 <body>
+
+  <h1>PRIMERA PARTE</h1>
   <h2>Crea un div que contenga un párrafo</h2>
   div>p
 
@@ -30,6 +32,53 @@
   div>div>p+div>p
   <h2>Crea un div que contenga un encabezado h1, un párrafo y una lista no ordenada con dos elementos de lista.  </h2>
   div>h1+p+ul>li*2
+
+  <h1>SEGUNDA PARTE</h1>
+  <h2>Crea un elemento HTML div con un ID de "header" </h2>
+  div#header
+  <h2>Genera un enlace a con una clase de "btn btn-primary".  </h2>
+  a.btn-primary
+  <h2>Crea un elemento section> con un ID de "main" y una clase de "content". ".  </h2>
+  section#main.content
+  <h2>Genera una lista desordenada ul> con una clase de "menu" y tres elementos de lista li> dentro de ella </h2>
+  ul.menu>li*3
+  <h2>Crea un elemento span> con una clase de "highlight" dentro de un elemento p> con un ID de "intro". </h2>
+  p#intro>span.highligth
+  <h2>Genera un botón button> con una clase de "btn" y un ID de "submit-button". .  </h2>
+  button.btn#submit-button
+  <h2>Crea un elemento div> con una clase de "container" y dentro de él, genera dos elementos div> adicionales con clases de "row" y "col-md-6".  </h2>
+  div.container>div.row.col-md-6*2
+  <h2>Genera un enlace a> con un ID de "logo" y una clase de "navbar-brand"".  </h2>
+  a#logo.navbar-brand
+  <h2>Crea un elemento div> con una clase de "wrapper" y dentro de él, genera tres elementos de lista li> con clases de "item1", "item2" y "item3".  </h2>
+  div>.wrapper>li.item$*3
+  <h2>Genera un elemento h1> con un ID de "title" y un elemento p> con una clase de "description" dentro de un elemento header>. .  </h2>
+  header>h1#title+p.description
+
+
+  <h1>TERCERA PARTE</h1>
+
+  <h2>Genera una lista ordenada ol> con tres elementos de lista li>, numerados automáticamente. </h2>
+  ol>li{$}*3
+  <h2>Crea una lista desordenada ul> con cinco elementos de lista li>, cada uno con un ítem numérico en orden ascendente. </h2>
+  ul>li{$}*5
+  <h2>Crea una lista ordenada ol> con cuatro elementos de lista li>, numerados del 5 al 8. </h2>
+  ol>li{$@5}*4
+  <h2>Genera una lista desordenada ul> con tres elementos de lista li>, numerados del 10 al 12. </h2>
+  ul>li{$@10}*3
+  <h2>Crea una lista ordenada ol> con tres elementos de lista li>, numerados del 1 al 3 y con números romanos en lugar de árabes. </h2>
+  ol>li{$}*3
+  <h2>Genera una lista desordenada ul> con cuatro elementos de lista li>, numerados automáticamente pero con un formato personalizado, como "Item #1", "Item </h2>
+  ul>li{item $$}*4
+  <h2>Crea una lista ordenada ol> con cinco elementos de lista li>, numerados automáticamente pero en orden descendente. </h2>
+  ol>li{$@-}*5
+  <h2>Genera una lista desordenada ul> con seis elementos de lista li>, numerados automáticamente, pero omite un número específico en la secuencia. </h2>
+  ul>li{$}*3+li{$@5}*3
+  <h2>Crea una lista ordenada ol> con tres elementos de lista li>, numerados automáticamente en orden ascendente, comenzando desde un número personalizado, como "Item 7", "Item 8", "Item 9". </h2>
+  ol>li{item$@7}*3
+  <h2>Genera una lista desordenada ul> con siete elementos de lista li>, numerados automáticamente en orden ascendente, pero con ceros delante, como "Item 01", "Item 02", "Item 03", etc. </h2>
+  ul>li{item $$@-}*7
+
 
 </body>
 
