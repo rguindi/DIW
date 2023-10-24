@@ -1,158 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="stylesheet" href="css/layoutposition.css"> -->
- 
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/layoutposition.css" />
+
     <title>Colocar elementos</title>
 
-<style>
+    <style></style>
+  </head>
 
-html, body{
-    height: 100%;
-
-}
-
-html{
-    background-color: black;
-}
-body{
-    background-color: white;
-    margin: 0px;
-    display: flex;
-    flex-direction: column;
-}
-
-header{
-    display: flex;
-    flex-direction: row;
-    height: 10%;
-    background-color: black;
-}
-header a{
-    color: white;
-    text-decoration: none;
-}
-img{
-    height: 75px;
-    width: 75px;
-}
-.navegacionprincipal{
-    background-color: rgb(255, 0, 0);
-    flex-grow: 1;
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-    text-align: center;
-    margin: 0;
-    padding: 0;
-
-}
-
-.navegacionprincipal ul{
-    flex-grow: 1;
-    list-style: none;
-
-   
-}
-
-.navegacionprincipal ul li{
-
-    margin: 5%;
-    display: inline;
-    position: relative;
-}
-.navegacionprincipal ul li ul{
-display: none;
-position: absolute;
-top: 100%;
-left: 0%;
-background-color: grey;
-padding: 10px;
-border: 1px solid #ccc;
-
-}
-.navegacionprincipal ul li ul li{
-line-height: 2;
-
-}
-
-.navegacionprincipal ul li :hover ul{
-
-    display: block;
-}
-
-.menuusuario{
-    color: antiquewhite;
-    min-width: 25%;
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-    text-align: center;
-    margin: 0;
-    padding: 0;
-
-}
-
-.menuusuario ul{
-    flex-grow: 1;
-    list-style: none;
-
-}
-
-.menuusuario ul li{
-    margin: 5%;
-    display: inline;
-}
-</style>
-</head>
-
-
-<body>
+  <body>
     <header>
-       <figure>
-        <img src="img/ordenador.png" alt="No se encuentra imagen" >
-    </figure>
+      <figure>
+        <img src="img/ordenador.png" alt="No se encuentra imagen" />
+      </figure>
 
-
-    <nav class="navegacionprincipal">
+      <nav class="navegacionprincipal">
         <ul id="lista1">
-            <li><a href="">Opcion 1</a>
+          <li>
+            <a href="">Opcion 1</a>
             <ul>
-                <li><a href="">SubOpcion 1</a></li>
-                <li><a href="">SubOpcion 2</a></li>
+              <li><a href="">SubOpcion 1</a></li>
+              <li><a href="">SubOpcion 2</a></li>
             </ul>
-            </li>
-            <li><a href="">Opcion 2</a></li>
-            <li><a href="">Opcion 3</a></li>
+          </li>
+          <li><a href="">Opcion 2</a></li>
+          <li><a href="">Opcion 3</a></li>
         </ul>
-    </nav>   
+      </nav>
 
-    <div class="menuusuario">
+      <div class="menuusuario">
         <ul id="lista2">
-            <li>Usuario</li>
-            <li>Contraseña</li>
-         
+          <li>Usuario</li>
+          <li>Contraseña</li>
         </ul>
-    </div>
+      </div>
     </header>
 
-
-
     <main>
-        <nav>
-            <ul>
-                <li>Opcion 4</li>
-                <li>Opcion 5</li>
-                <li>Opcion 6</li>
-            </ul>
-        </nav>
-        
+      <nav>
+        <ul>
+          <li>Opcion 4</li>
+          <li>Opcion 5</li>
+          <li>Opcion 6</li>
+        </ul>
+      </nav>
     </main>
     <footer>
-        <p>ESTE ES EL FOOTER</p>
+      <p>ESTE ES EL FOOTER</p>
     </footer>
-</body>
-
+  </body>
 </html>
