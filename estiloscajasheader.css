@@ -1,0 +1,100 @@
+body {
+    /*color para distinguir la caja*/
+    background-color: lightgray;
+    /*quitamos el margen con la caja html*/
+    /*normalmente no se configura*/
+    margin: 0px;
+    /*garantizamos que el contenedor del cuerpo ocupe el 100 de la venta al cargar*/
+    min-height: 100vh;
+}
+
+header {
+    display: flex;
+    /*flex-direction:row VALOR POR DEFECTO, por eso no lo especificamos*/
+    /*especificamos la altura mientras rellenamos con el contenido, pero no es necesario definir medidas, el conteindo y el padding y margin serán suficientes*/
+    /* min-height: 100px;*/
+    /*damos un color para distinguir la caja*/
+    background: linear-gradient(to left, #000, #777);
+    /*aplicamos margen con la caja contenedora para poder distinguir la caja exterior*/
+    padding: 10px;
+    color: white;
+}
+
+
+header .caja1 {
+    display: flex;
+    padding: 10px;
+    background-color: none
+    ;
+}
+
+header .caja1 .imagen {
+    width: 120px;
+    height: 120px;
+    background-color: lightgreen;
+}
+
+header .caja1 .eslogan{
+    align-self: flex-end;
+    font-family: 'Alumni Sans Collegiate One', sans-serif;
+    font-family: 'Playpen Sans', cursive;
+
+}
+header .caja2 {
+    display: flex;
+    flex-grow: 1;
+    background-color: none;
+    align-items: flex-end;
+}
+.menuPrincipal{
+    display: flex;
+    flex-grow: 1;
+    justify-content: flex-end;
+}
+.menuPrincipal ul{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    list-style: none;
+    width: 100%;
+}
+
+.menuPrincipal ul li{
+         
+    position: relative;
+    width: auto;
+}
+
+.menuPrincipal ul li a{
+    margin-left: 10px;
+}
+.menuPrincipal ul li{
+    padding: 10px;
+    position: relative;
+    width: auto;
+
+}
+.menuPrincipal a:hover {           
+   color:#ff31c8
+}
+
+.menuPrincipal a:hover i {           
+   color: white;           
+}
+
+.menuPrincipal li:hover a {
+    background: #d5d4ff;
+}
+.menuPrincipal li:hover .subOpcion {
+    display: block;
+    
+}
+.subOpcion{
+    display: none;
+}
+
+header .caja3 {
+    min-width: 200px;
+    background-color: none;
+}
