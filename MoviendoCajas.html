@@ -4,10 +4,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Collegiate+One&family=Playpen+Sans:wght@500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <title>Document</title>
 </head>
 
@@ -29,13 +25,12 @@
             /*especificamos la altura mientras rellenamos con el contenido, pero no es necesario definir medidas, el conteindo y el padding y margin serán suficientes*/
             /* min-height: 100px;*/
             /*damos un color para distinguir la caja*/
-            background: linear-gradient(to left, #000, #777);
+            background-color: white;
             /*aplicamos margen con la caja contenedora para poder distinguir la caja exterior*/
             padding: 10px;
         }
 
         header .caja1 {
-            display: flex;
             padding: 10px;
             background-color: aqua;
         }
@@ -46,68 +41,9 @@
             background-color: lightgreen;
         }
 
-        header .caja1 .eslogan{
-            align-self: flex-end;
-            font-family: 'Alumni Sans Collegiate One', sans-serif;
-            font-family: 'Playpen Sans', cursive;
-
-        }
-
         header .caja2 {
-            display: flex;
             flex-grow: 1;
             background-color: lightsalmon;
-            align-items: flex-end;
-        }
-
-        .menuPrincipal{
-            display: flex;
-            flex-grow: 1;
-            justify-content: flex-end;
-        }
-
-
-
-        .menuPrincipal ul{
-
-            display: flex;
-            flex-direction: row;
-            justify-content: flex-end;
-            list-style: none;
-            width: 100%;
-        }
-
-        .menuPrincipal ul li{
-         
-            position: relative;
-            width: auto;
-
-        }
-        .menuPrincipal ul li a{
-            margin-left: 10px;
-        }
-        .menuPrincipal ul li{
-            padding: 10px;
-            position: relative;
-            width: auto;
-
-        }
-        .menuPrincipal a:hover {           
-           color:#ff31c8
-        }
-
-        .menuPrincipal a:hover i {           
-           color: white;           
-        }
-
-        .menuPrincipal li:hover a {
-            background: #d5d4ff;
-        }
-        .menuPrincipal li:hover .subOpcion {
-            display: block;
-        }
-        .subOpcion{
-            display: none;
         }
 
         header .caja3 {
@@ -201,25 +137,8 @@
     <header>
         <div class="caja1">
             <div class="imagen"></div>
-            <p class = eslogan>ESLOGAN</p>
         </div>
-        <div class="caja2">
-            <nav class="menuPrincipal">
-                <ul class="listaPrincipal">
-                    <li class="opcionPrincipal"><a class="enlaceListaPrincipal" href=""><i class="fas fa-home"></i>Inicio</a></li>
-                    <li class="opcionPrincipal"><a class="enlaceListaPrincipal" href=""><i class="fas fa-globe"></i>Acerca</a></li>
-                    <li class="opcionPrincipal"> <a class="enlaceListaPrincipal" href=""><i class="fas fa-list"></i>Servicios</a>
-                        <ul class="sublista">
-                            <li class="subOpcion"><a class="enlaceSubLista" href="">Servicio 1</a></li>
-                            <li class="subOpcion"><a class="enlaceSubLista" href="">Servicio 2</a></li>
-                            <li class="subOpcion"> <a class="enlaceSubLista" href="">Servicio 3</a></li>
-                            <li class="subOpcion"><a class="enlaceSubLista" href="">Servicio 4</a></li>
-                        </ul>
-                    </li>
-                    <li class="opcionPrincipal"><a class="enlaceListaPrincipal" href=""><i class="fas fa-envelope"></i>Contacto</a></li>
-                </ul>
-            </nav>
-        </div>
+        <div class="caja2"></div>
         <div class="caja3"></div>
     </header>
 

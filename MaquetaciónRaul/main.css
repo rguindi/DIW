@@ -1,0 +1,12 @@
+main {
+    display: flex;
+    /* Hace que el elemento sea un contenedor flexible */
+    flex-direction: column;
+    /* Establece la dirección de los elementos secundarios como una columna */
+    background-color: rgb(78, 78, 43);
+    /* Establece el color de fondo en un tono amarillo */
+    flex-grow: 1;
+    /* Permite que el elemento crezca para ocupar espacio disponible */
+    min-height: 110vh;
+    /* Establece la altura mínima en 110vh (el 100% del viewport height más un 10%) */
+}
