@@ -35,8 +35,25 @@ align-items: center;
     text-decoration: none;
     color: rgb(201, 201, 201);
  }
+.opcionPrincipal{
+
+    position: relative;
+   
+}
+.opcionPrincipal:hover .sublista{
+
+    display: block;
+    visibility: visible;
+}
+
  .sublista{
-    display: none;
+
+
+   
+    position: absolute;
+    visibility: hidden;
+    margin-left: 0px;
+    background-color: aqua;
  }
 
  .caja3{
