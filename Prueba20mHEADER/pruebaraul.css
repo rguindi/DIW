@@ -1,6 +1,14 @@
 body{
     width: 100%;
+    display: flex;
+    flex-direction: column;
+
 }
+main{
+    background-color: beige;
+    
+}
+
 header{
     display: flex;
     background: linear-gradient(#e66465, #9198e5);

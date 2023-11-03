@@ -1,0 +1,22 @@
+
+footer{
+    display: flex;
+    background: linear-gradient(#8be664, #616ce6);
+   
+}
+
+.contiene{
+    display: flex;
+    flex-direction: row;
+    
+}
+.p1{
+background-color: #616ce6;
+}
+.p2{
+    background-color: #61e6b3;
+    flex-grow: 1;
+}
+.p3{
+    background-color: #616ce6;
+}
