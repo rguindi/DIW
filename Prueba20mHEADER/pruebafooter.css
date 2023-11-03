@@ -7,7 +7,7 @@ footer{
 
 .contiene{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     
 }
 .p1{
@@ -15,7 +15,8 @@ background-color: #616ce6;
 }
 .p2{
     background-color: #61e6b3;
-    flex-grow: 1;
+    min-height: 60vh;
+
 }
 .p3{
     background-color: #616ce6;
