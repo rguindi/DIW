@@ -8,14 +8,14 @@ footer{
 .contiene{
     display: flex;
     flex-direction: column;
-    
+    height: 100vh;
 }
 .p1{
 background-color: #616ce6;
 }
 .p2{
     background-color: #61e6b3;
-    min-height: 60vh;
+   flex-grow: 1;
 
 }
 .p3{
