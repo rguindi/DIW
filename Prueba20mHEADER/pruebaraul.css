@@ -29,6 +29,8 @@ align-items: center;
 flex-grow: 1;
 justify-content: left;
 align-items: center;
+align-self: flex-end;
+
 
 }
 .caja2 .listaPrincipal{
@@ -60,9 +62,29 @@ align-items: center;
    
     position: absolute;
     visibility: hidden;
-    margin-left: 0px;
-    background-color: aqua;
+    padding: 0px;
+    left: 0px;   
+    background-color: rgb(62, 81, 81);
+    
+   
+}
+.sublista li{
+     
+     padding: 0px;
+     background-color: #9198e5;
+     position: relative;
+     width: 5em;
+     margin: 0px;
+    
+    
+
  }
+ .sublista li:hover {
+     
+   background-color: aqua;
+   
+
+}
 
  .caja3{
  display: flex;
