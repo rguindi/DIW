@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+        a{
+            text-decoration: none;
+            color: black;
+        }
+      .menu {
+        list-style: none;
+        display: flex;
+        justify-content: space-evenly;
+    
+      }
+
+      .opcion {
+        /* display: inline; */
+      }
+
+      .opcion:hover .submenu{
+        display: block;
+      }
+
+      .submenu{
+        position: absolute;
+        border: 2px solid purple;
+        /* visibility: hidden; */
+        display: none;
+        list-style: none;
+        padding-left: 0px;
+        background-color: gray;
+      }
+      .subopcion{
+   
+      }
+
+    </style>
+  </head>
+  <body>
+    <ul class="menu">
+      <li class="opcion"><a href="#">
+        Opcion 1</a>
+        <ul class="submenu">
+          <li class="subopcion"><a href="#">subOpcion 1</a></li>
+          <li class="subopcion"><a href="#">subOpcion 2</a></li>
+          <li class="subopcion"><a href="#">subOpcion 3</a></li>
+        </ul>
+      </li>
+      <li class="opcion"><a href="#">Opcion 2</a></li>
+      <li class="opcion"><a href="#">Opcion 3</a></li>
+    </ul>
+  </body>
+</html>

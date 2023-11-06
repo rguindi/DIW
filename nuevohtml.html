@@ -3,6 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
     <title>Document</title>
     <style>
       body {
@@ -32,6 +34,13 @@
 
       h3{
         text-align: center;
+        color: purple;
+        font-size: 20px;
+        font-weight: bold;
+        padding-bottom: 25px;
+        /* margin-bottom: 25px; */
+
+
       }
 
       input[type="text"] {
@@ -51,16 +60,30 @@
         background-color: rgb(231, 46, 231);
         transition: all 0.4s;
       }
+
+      h4{
+        font-size: 13px;
+        font-style: italic;
+      }
+
+      h4 span {
+        color: purple;
+      }
+
+      h4 i{
+        margin-left: 50px;
+
+      }
     </style>
   </head>
   <body>
     <div class="contenedor" >
-        <h3>Texto encima formulario</h3>
-      <form action="">
-        <input type="text" />
-        <input type="button" value="Enviar" />
-      </form>
-      <h4>Texto debajo formulario</h4>
+      <h3>Texto encima formulario</h3>
+        <form action="">
+          <input type="text" />
+          <input type="button" value="Enviar" />
+        </form>
+        <h4>"Lorem ipsum dolor sit, amet consectetur adipisiykl <span>tylttyulty."</span><i class="fas fa-regular fa-copyright"></i> </h4>
  
     </div>
   </body>
