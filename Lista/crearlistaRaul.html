@@ -6,9 +6,11 @@
     <title>Document</title>
 
     <style>
-        a{
+      .enlacemenu{
             text-decoration: none;
             color: black;
+            transition: 0.4s;
+            padding: 10px;
         }
       .menu {
         list-style: none;
@@ -17,13 +19,27 @@
     
       }
 
-      .opcion {
-        /* display: inline; */
+      a{
+        margin: 0px;
+      }
+      .opcion{
+        padding: 10px;
+      }
+  
+      .opcion:hover .submenu{
+        /* display: block; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
       }
 
-      .opcion:hover .submenu{
-        display: block;
+      .subopcion:hover a{
+        text-shadow: 8px 1px 8px rgba(0,0,0,0.82);
+    
       }
+      
+      
 
       .submenu{
         position: absolute;
@@ -33,25 +49,31 @@
         list-style: none;
         padding-left: 0px;
         background-color: gray;
+        margin-top: 9px;
+        
       }
-      .subopcion{
+      a:hover{
+        color: blueviolet;
+        background-color: aquamarine;
+       
    
       }
+      
 
     </style>
   </head>
   <body>
     <ul class="menu">
-      <li class="opcion"><a href="#">
+      <li class="opcion"><a class="enlacemenu" href="#">
         Opcion 1</a>
         <ul class="submenu">
-          <li class="subopcion"><a href="#">subOpcion 1</a></li>
-          <li class="subopcion"><a href="#">subOpcion 2</a></li>
-          <li class="subopcion"><a href="#">subOpcion 3</a></li>
+          <li class="subopcion"><a href="#">subopcion 1</a></li>
+          <li class="subopcion"><a href="#">sub 2</a></li>
+          <li class="subopcion"><a href="#">sub 3</a></li>
         </ul>
       </li>
-      <li class="opcion"><a href="#">Opcion 2</a></li>
-      <li class="opcion"><a href="#">Opcion 3</a></li>
+      <li class="opcion"><a class="enlacemenu" href="#">Opcion 2</a></li>
+      <li class="opcion"><a class="enlacemenu" href="#">Opcion 3</a></li>
     </ul>
   </body>
 </html>
