@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--Iconos-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        footer {
+            display: flex;
+            padding: 20px;
+            flex-wrap: wrap;            /*hacemos que el contenido sea envuelto si se reduce el navegador*/
+            justify-content: space-between;  /*igualamos el espacio entre columnas*/     
+            border-top: 4px solid rgb(175, 21, 116);
+            min-height: 15vh;
+            background: linear-gradient(to left, #000, #777);
+        }
+
+
+        .footer-column {         /*TODAS  */
+            text-align: left;       
+        }
+
+        .footer-column-distinta {      /* LA 3 */
+            display: flex;
+            flex-direction: column;
+        }
+
+        .footer-column h4 {         
+            font-size: 18px;
+        }
+        .footer-column .h4Color {      /* SE APLICA A .h4color, sobraria lo otro   (h4 ultima caja) */
+            display: flex;    /* Para poder centrar*/
+            justify-content: center;
+            font-size: 18px;
+            color: #a76767;
+        }
+
+         .h4Centrado {      /* H4 De la caja 3 */
+            display: flex; /* para poder centrar */
+            justify-content: center;
+            font-size: 18px;
+        }
+
+       
+        .footer-column i {      /* iconos */
+            margin-right: 10px;
+            color: #e10808
+        }
+
+        .footer-column p {
+            font-size: 14px;
+        }
+        .footer-column a {
+            text-decoration: none;
+            padding: 6px;
+            color: white;
+            transition: color 0.4s;
+            margin: 4px;
+        }
+
+        .footer-column a:hover {
+            color: rgb(134, 11, 4);
+            /* Cambia el color del texto al pasar el mouse */
+        }
+
+        .footer-column a:hover i {
+            color: white
+        }
+
+
+        .footer-column ul {
+            list-style: none;
+            margin-left: 0px;
+            padding: 0px;
+        }
+
+        
+        .social-icons {   /*UL DE iconos*/
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+        .social-icons li {
+            margin-right: 10px;
+        }
+        
+        .social-icons a {      /*EL CIRCULO MORADO CON I DENTRO*/
+            display: block;
+            background: #501f4b;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            transition: background 0.4s;
+        }
+
+        .social-icons a:hover {
+            color: white;
+            background: #a1a1a1;
+        }
+
+        .footer-column .social-icons a:hover i {
+            color: rgb(0, 102, 85);
+        }
+
+        .social-icons i {
+            font-size: 30px;
+            margin-left: 6px;
+            margin-top: 6px;
+            color: white;
+        }
+
+        .footer-column form {
+            margin-top: 40px;
+            display: flex;
+        }
+
+        
+        .footer-column input[type="text"] {
+            /*Jugamos con el ancho del elemento para que ocupe un espacio de la caja*/
+            width: 60%;
+            padding: 5px;
+        }
+        /* Establece estilos para el botón en el formulario */
+        .footer-column button {
+            width: 40%;
+            background-color: #9b059d;
+            color: #fff;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            transition: background-color 0.8s;
+        }
+        
+        .footer-column button:hover {
+            background-color: #39617a;
+        }
+
+        .quotes {
+
+            color: white;
+            margin-top: 5px;
+        }
+
+
+         blockquote p span {
+            color: #75007d;
+        }
+
+        .footer-column blockquote p span.copyright {
+            margin-left: 5px;
+            font-size: 18px;
+            color: #f3ddf5;
+        }
+
+    </style>
+</head>
+
+<body>
+    <footer>
+        <div class="footer-column">
+            <h4>Contacto</h4>
+            <p><i class="fas fa-map-marker-alt"></i> Dirección: Calle Principal, Ciudad</p>
+            <p><i class="fas fa-envelope"></i> Correo: info@miempresa.com</p>
+            <p><i class="fas fa-phone"></i> Teléfono: +1 234 567 890</p>
+        </div>
+
+        <div class="footer-column">
+            <h4>Enlaces</h4>
+            <ul>
+                <li><a href="#"><i class="fas fa-home"></i> Inicio</a></li>
+                <li><a href="#"><i class="fas fa-info-circle"></i> Acerca de nosotros</a></li>
+                <li><a href="#"><i class="fas fa-list"></i> Servicios</a></li>
+                <li><a href="#"><i class="fas fa-envelope"></i> Contacto</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-column footer-column-distinta">
+            <h4 class="h4Centrado">Redes Sociales</h4>
+            <ul class="social-icons">
+                <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+            </ul>
+        </div>
+
+        <div class="footer-column quotes">
+            <!-- Columna del pie de página para suscripción -->
+            <h4 class="h4Color">¡Suscríbete a nuestro boletín!</h4>
+            <form class="footer-form" action="#" method="post">
+                <input type="text" name="email" placeholder="Tu dirección de correo" required>
+                <button type="submit">Suscribirse</button>
+            </form>
+            <div class="footer-column quotes">
+                <!-- Sección de citas en el pie de página -->
+                <blockquote>
+                    <p>"El éxito no es la clave de la felicidad, es justo <span class="color"> al revés</span>."<span
+                            class="copyright">&nbsp;&nbsp;&nbsp;©</span> </p>
+                </blockquote>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

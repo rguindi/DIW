@@ -9,8 +9,10 @@ footer{
 .contiene{
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    height: 100vh;                 /* ALTURA NECESARIA PARA EMPUJAR FOOTEER */
 }
+
+
 .p1{
 background-color: #616ce6;
 }
