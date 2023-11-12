@@ -29,9 +29,9 @@ figure{
 
 .gradiente{
     width: 100%;
-    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 47%, rgba(0,212,255,1) 100%);
+    background: linear-gradient(to top, white, transparent);
 
-    height: 730px;
+    height: 660px;
     position: relative;
     z-index: 1;
     flex-grow: 1;
