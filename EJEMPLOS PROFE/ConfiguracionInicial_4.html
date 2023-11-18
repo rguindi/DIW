@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <title>Document</title>
+    <style>
+        html,
+        body {
+            height: 100%;
+        }
+
+        html {
+            background-color: black;
+        }
+
+        body {
+            background-color: grey;
+            display: flex;
+            margin: 0;
+            flex-direction: column;
+        }
+
+        header {
+            background-color: black;
+            height: 12%;
+            display: flex;
+            flex-direction: row;
+            border-bottom: 4px solid rgb(175, 21, 116);
+
+        }
+
+        header {
+            text-decoration: none;
+            color: white;
+            font-size: large;
+        }
+
+
+        header figure {
+            display: flex;
+            margin: 0;
+            padding: 5px;
+        }
+
+
+        header img {
+            padding: 0;
+            width: 75px;
+            height: 75px;
+        }
+
+        header h3 {
+            position: relative;
+            top: 35px;
+            background: linear-gradient(to right, rgb(246, 80, 191), white);
+            -webkit-background-clip: text;
+            /* Opción para aplicar el degradado al texto */
+            color: transparent;
+            /* Hacemos el texto transparente para que se vea el degradado detrás */
+            display: inline;
+        }
+
+
+        .menuPrincipal {
+            background-color: black;
+            flex-grow: 1;
+            display: flex;
+            align-items: flex-end;
+            margin: 0;
+            padding: 0;
+            text-align: right;
+        }
+
+        .menuPrincipal nav {
+            display: flex;
+            /* Agrega display: flex al <nav> para que los <li> se expandan */
+
+        }
+
+        .menuPrincipal ul {
+            flex-grow: 1;
+            list-style: none;
+
+
+        }
+
+        .menuPrincipal ul li {
+            display: inline;
+            position: relative;
+
+        }
+
+        header a,
+        .accordion a,
+        .footer-column a,
+        .menuPrincipal ul li a,
+        .menuUsuario ul li a {
+            text-decoration: none;
+            font-size: 16px;
+            flex-grow: 1;
+            padding: 16px;
+            color: white;
+            transition: color 0.4s;
+            /* Agrega una transición de color suave durante 0.3 segundos */
+        }
+
+        .menuPrincipal ul li a:hover {
+            color: rgb(246, 80, 191);
+            background-color: rgb(255, 228, 249);
+            /* Color al pasar el puntero por encima */
+        }
+
+        .accordion a:hover,
+        .footer-column a:hover, 
+        .menuUsuario ul li a:hover {
+            color: rgb(246, 80, 191);
+        }
+
+        /* Estilos para el submenú */
+        .menuPrincipal ul li ul {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: white;
+            padding: 10px;
+            border: 1px solid #ccc;
+            align-items: flex-start;
+            margin-top: 15px;
+            /*https://www.cssmatic.com/box-shadow*/
+            -webkit-box-shadow: -6px 10px 5px 0px rgba(133, 64, 116, 1);
+            -moz-box-shadow: -6px 10px 5px 0px rgba(133, 64, 116, 1);
+            box-shadow: -6px 10px 5px 0px rgba(133, 64, 116, 1);
+            width: 120px;
+        }
+
+
+        .menuPrincipal ul li ul li {
+            display: block;
+            line-height: 2;
+        }
+
+        
+        .menuPrincipal ul li ul li a {
+
+            color: rgb(108, 29, 78)
+        }
+
+        .menuPrincipal ul li:hover ul {
+            display: block;
+
+        }
+
+        .menuUsuario {
+            background-color: black;
+            display: flex;
+            align-items: flex-end;
+            justify-content: flex-end;
+            margin: 0;
+            padding: 0;
+            margin-right: 15px;
+            min-width: 25%;
+        }
+
+        .menuUsuario nav {
+            display: flex;
+
+        }
+
+        .menuUsuario ul {
+            list-style: none;
+            margin-top: 40px;
+
+        }
+
+        .menuUsuario ul li {
+            margin-bottom: 0px;
+            display: inline;
+            margin-right: 10px;
+            white-space: nowrap;
+            /* Evita el retorno de línea */
+        }
+
+        /*FIN DEL HEADER*/
+
+        /*MENU LATERAL*/
+        aside {
+            background-color: black;
+            height: 100%;
+            flex-grow: 2;
+            min-width: 12%;
+            max-width: 12%;
+        }
+
+        /* Estilo para el acordeón y las opciones */
+        .accordion {
+            border: 1px solid #ccc;
+            margin: 10px;
+            background-color: white;
+
+        }
+
+        .accordion a {
+            text-decoration: none;
+            color: black;
+            margin-top: 100px;
+            font-size: 14px;
+
+
+        }
+
+        .accordion-btn {
+            background-color: black;
+            color: white;
+            border: none;
+            padding: 10px;
+            width: 100%;
+            text-align: left;
+            cursor: pointer;
+        }
+
+        .accordion-content {
+            display: none;
+            padding: 10px;
+        }
+
+        /* Mostrar u ocultar el contenido del acordeón al hacer clic en el botón */
+        .accordion-btn.active+.accordion-content {
+            display: block;
+        }
+
+
+        main {
+            display: flex;
+            flex-direction: row;
+            height: 100%;
+            border-top: 2px solid rgb(175, 21, 116);
+            border-bottom: 2px solid rgb(175, 21, 116);
+        }
+
+        section {
+            display: flex;
+            flex-wrap: wrap;
+            flex-grow: 1;
+            gap: 10px;
+        }
+
+        .box {
+            margin-left: 10px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            padding: 10px;
+            width: 150px;
+            height: 150px;
+            background-color: white;
+            -webkit-box-shadow: -1px 2px 15px 0px rgba(0, 0, 0, 1);
+            -moz-box-shadow: -1px 2px 15px 0px rgba(0, 0, 0, 1);
+            box-shadow: -1px 2px 15px 0px rgba(0, 0, 0, 1);
+        }
+
+
+
+
+        /* Estilos para el footer */
+        footer {
+            background-color: black;
+            /* Cambia el color de fondo según tu preferencia */
+            height: 15%;
+            color: #fff;
+            /* Color de texto */
+            padding: 20px;
+            /* Espaciado interno */
+
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            /* Distribuye las columnas horizontalmente */
+            border-top: 4px solid rgb(175, 21, 116);
+        }
+
+      
+        /* Estilos para las columnas en el footer */
+        .footer-column {
+            flex: 1;
+            margin-right: 20px;
+        }
+
+        /* Estilos para los encabezados en las columnas */
+        .footer-column h4 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        /* Estilos para los íconos en el pie de página */
+        .footer-column i {
+            margin-right: 5px;
+        }
+
+        .footer-column ul{
+            list-style: none;
+        }
+
+        /* Estilos para el formulario de búsqueda */
+        .footer-column form {
+            display: flex;
+        }
+
+        .footer-column input[type="text"] {
+            width: 70%;
+            padding: 5px;
+        }
+
+        .footer-column button {
+            width: 30%;
+            background-color: #f70087;
+            color: #fff;
+            border: none;
+            padding: 5px;
+        }
+
+        .footer-column button:hover {
+            background-color: #d60076;
+        }
+
+        /* Estilos para los íconos de redes sociales */
+        .social-icons {
+            list-style: none;
+            padding: 0;
+            display: flex;
+        }
+
+        .social-icons li {
+            margin-right: 10px;
+        }
+
+        .social-icons a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 24px;
+        }
+
+        /* Estilos para la cuarta columna */
+        .quotes {
+            flex: 1;
+            /* La cuarta columna ocupa un tercio del ancho de la página */
+        }
+
+        .quotes blockquote {
+            font-style: italic;
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        .quotes blockquote p {
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <figure>
+            <img src="logo.png" alt="El logo">
+        </figure>
+        <h3>Eslogan WEB</h3>
+        <nav class="menuPrincipal">
+            <ul>
+                <li><a href=""><i class="fas fa-home"></i> Inicio</a></li>
+                <li><a href=""><i class="fas fa-globe"></i> Acerca</a></li>
+                <li>
+                    <a href=""><i class="fas fa-list"></i> Servicios</a>
+                    <ul>
+                        <li><a href=""></i> Servicio 1</a></li>
+                        <li><a href=""></i> Servicio 2</a></li>
+                        <li><a href=""></i> Servicio 1</a></li>
+                        <li><a href=""></i> Servicio 2</a></li>
+                    </ul>
+                </li>
+                <li><a href=""><i class="fas fa-envelope"></i> Contacto</a></li>
+            </ul>
+        </nav>
+        <nav class="menuUsuario">
+            <ul>
+                <li><a href=""><i class="fas fa-user"></i> Usuario</a></li>
+                <li><a href=""><i class="fas fa-user-plus"></i> Registro</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <aside>
+            <nav>
+                <!-- Acordeón 1 -->
+                <div class="accordion">
+                    <button class="accordion-btn">Acordeón 1</button>
+                    <div class="accordion-content">
+                        <a href="#">Opción 1</a>
+                        <a href="#">Opción 2</a>
+                        <a href="#">Opción 3</a>
+                    </div>
+                </div>
+
+                <!-- Acordeón 2 -->
+                <div class="accordion">
+                    <button class="accordion-btn">Acordeón 2</button>
+                    <div class="accordion-content">
+                        <a href="#">Opción 1</a>
+                        <a href="#">Opción 2</a>
+                        <a href="#">Opción 3</a>
+                    </div>
+                </div>
+
+                <!-- Acordeón 3 -->
+                <div class="accordion">
+                    <button class="accordion-btn">Acordeón 3</button>
+                    <div class="accordion-content">
+                        <a href="#">Opción 1</a>
+                        <a href="#">Opción 2</a>
+                        <a href="#">Opción 3</a>
+                    </div>
+                </div>
+
+                <!-- Acordeón 4 -->
+                <div class="accordion">
+                    <button class="accordion-btn">Acordeón 4</button>
+                    <div class="accordion-content">
+                        <a href="#">Opción 1</a>
+                        <a href="#">Opción 2</a>
+                        <a href="#">Opción 3</a>
+                    </div>
+                </div>
+            </nav>
+        </aside>
+
+        <section>
+            <article class="box">
+                <h1>FUTURA CARD</h1>
+            </article>
+            <article class="box">
+                <h1>FUTURA CARD</h1>
+            </article>
+            <article class="box">
+                <h1>FUTURA CARD</h1>
+            </article>
+            <article class="box">
+                <h1>FUTURA CARD</h1>
+            </article>
+            <article class="box">
+                <h1>FUTURA CARD</h1>
+            </article>
+            <article class="box">
+                <h1>FUTURA CARD</h1>
+            </article>
+            <article class="box">
+                <h1>FUTURA CARD</h1>
+            </article>
+            <article class="box">
+                <h1>FUTURA CARD</h1>
+            </article>
+            <article class="box">
+                <h1>FUTURA CARD</h1>
+            </article>
+            <article class="box">
+                <h1>FUTURA CARD</h1>
+            </article>
+            <article class="box">
+                <h1>FUTURA CARD</h1>
+            </article>
+            <article class="box">
+                <h1>FUTURA CARD</h1>
+            </article>
+            <article class="box">
+                <h1>FUTURA CARD</h1>
+            </article>
+            <article class="box">
+                <h1>FUTURA CARD</h1>
+            </article>
+            <article class="box">
+                <h1>FUTURA CARD</h1>
+            </article>
+            <article class="box">
+                <h1>FUTURA CARD</h1>
+            </article>
+            <article class="box">
+                <h1>FUTURA CARD</h1>
+            </article>
+            <article class="box">
+                <h1>FUTURA CARD</h1>
+            </article>
+
+            <article class="box">
+                <h1>FUTURA CARD</h1>
+            </article><article class="box">
+                <h1>FUTURA CARD</h1>
+            </article><article class="box">
+                <h1>FUTURA CARD</h1>
+            </article>
+        </section>
+    </main>
+    <!-- Footer -->
+   <!-- Footer -->
+<footer>
+    <div class="footer-column">
+        <h4>Contacto</h4>
+        <p><i class="fas fa-map-marker-alt"></i> Dirección: Calle Principal, Ciudad</p>
+        <p><i class="fas fa-envelope"></i> Correo: info@miempresa.com</p>
+        <p><i class="fas fa-phone"></i> Teléfono: +1 234 567 890</p>
+    </div>
+
+    <div class="footer-column">
+        <h4>Enlaces</h4>
+        <ul>
+            <li><a href="#"><i class="fas fa-home"></i> Inicio</a></li>
+            <li><a href="#"><i class="fas fa-info-circle"></i> Acerca de nosotros</a></li>
+            <li><a href="#"><i class="fas fa-list"></i> Servicios</a></li>
+            <li><a href="#"><i class="fas fa-envelope"></i> Contacto</a></li>
+        </ul>
+    </div>
+    
+
+    <div class="footer-column">
+        <h4>Redes Sociales</h4>
+        <ul class="social-icons">
+            <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+        </ul>
+    </div>
+
+    <div class="footer-column quotes">
+        <h4>Frases Inspiradoras</h4>
+        <blockquote>
+            <p>"El éxito no es la clave de la felicidad. La felicidad es la clave del éxito. Si amas lo que haces, serás exitoso."</p>
+        </blockquote>
+    </div>
+</footer>
+
+    
+
+    <script>
+        // Obtenemos todos los botones de acordeón
+        var accordionButtons = document.querySelectorAll(".accordion-btn");
+
+        // Agregamos un evento de clic a cada botón
+        accordionButtons.forEach(function (button) {
+            button.addEventListener("click", function () {
+                // Alternamos la clase "active" en el botón para mostrar/ocultar el contenido
+                this.classList.toggle("active");
+
+                // Obtenemos el elemento hermano siguiente, que es el contenido del acordeón
+                var content = this.nextElementSibling;
+
+                // Alternamos la clase "active" en el contenido para mostrar/ocultar el contenido
+                if (content.style.display === "block") {
+                    content.style.display = "none";
+                } else {
+                    content.style.display = "block";
+                }
+            });
+        });
+    </script>
+
+</body>
+
+</html>

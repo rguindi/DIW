@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+   
+      .menu {     /* UL PRINCIPal */
+        background-color: bisque;
+        margin: 0px;
+        display: flex;
+        justify-content: space-evenly;
+    
+      }
+      a{
+        text-decoration: none;
+        color: aliceblue;
+      }
+
+      .opcion{   /* LI PRINCIPal */
+        position: relative;
+        list-style: none;
+        padding: 20px;
+        margin: 0px;
+        background-color: brown;
+      }
+      .opcion:hover{   
+      
+        background-color: rgb(4, 42, 0);
+      }
+
+      .submenu{ /* UL SUBMENU */
+        visibility: hidden;
+        z-index: 1;
+        top: 58px;
+        left: 0px;
+        position: absolute;
+        padding: 0px;
+        font-size: 18px;
+        min-width: 98px;
+      }
+      .opcion:hover .submenu{
+        visibility: visible;
+      }
+      .subopcion{   /* LI SUBMENU */
+        text-align: center;
+        padding: 10px;      
+        list-style: none;
+        background-color: blueviolet;
+      }
+      .subopcion:hover{  
+        background-color: rgb(4, 0, 8);
+      }
+
+    </style>
+  </head>
+  <body>
+    <ul class="menu">
+      <li class="opcion"><a class="enlacemenu" href="#">
+        Opcion 1</a>
+        <ul class="submenu">
+          <li class="subopcion"><a href="#">sub 1</a></li>
+          <li class="subopcion"><a href="#">sub 2</a></li>
+          <li class="subopcion"><a href="#">sub 3</a></li>
+        </ul>
+      </li>
+      <li class="opcion"><a class="enlacemenu" href="#">Opcion 2</a></li>
+      <li class="opcion"><a class="enlacemenu" href="#">Opcion 3</a></li>
+    </ul>
+  </body>
+</html>

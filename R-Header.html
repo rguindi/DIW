@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Fuentes-->
+    <link href="https://fonts.cdnfonts.com/css/symphony-script" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/i-irrigation-shallow" rel="stylesheet">
+    <!--Iconos-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        
+        /* Estilos para enlaces */
+        a {
+            text-decoration: none;
+            color: white;
+            font-size: 16px;
+        }
+
+        header {
+            display: flex;
+            min-height: 8vh;
+            background: linear-gradient(to left, #000, #777);
+            border-bottom: 4px solid rgb(255, 0, 153);
+        }
+
+        .caja1 {
+            display: flex;
+            flex-direction: row;
+            padding-left: 10px; */
+            align-items: flex-end;
+            margin: 0px;
+        }
+        
+        .caja1 .imagen {
+            width: 100px;
+            height: 100px;
+        }
+
+        /* hacemos la caja del slogan flexible para poder mover el h3 dentro de ella */
+        .caja1 .slogan {display: flex;  align-items: flex-end; } 
+
+        .slogan h3 {
+            /*ajustamos los margenes y el padding del h3 para poner la imagen a la altura de la imagen que queramos*/
+            /* padding: 0px; */
+            margin-bottom: 0px;
+            padding-left: 20px;
+            background: linear-gradient(to right, rgb(246, 80, 191), white);
+            -webkit-background-clip: text;
+            color: transparent;
+            font-family: 'i Irrigation Shallow', sans-serif;
+            font-size: 2em;
+        }
+
+       
+         .caja2 { 
+            display: flex;
+            flex-grow: 1;  /* Permite que el elemento crezca para ocupar espacio disponible */
+            align-items: flex-end;
+        }
+    
+        .listaPrincipal { 
+           display: flex;
+           flex-grow: 1;
+            justify-content: flex-end;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            width: 100%;      /* UL OCUPA CAJA 2 */
+        }
+
+        .listaPrincipal li {
+            margin: 0;
+            padding: 0;
+            position: relative;      
+            min-width: max-content;
+        }
+
+        .listaPrincipal a {  
+            color: #FFFFFF;
+            display: block;   /* Convierte los enlaces en bloques para ocupar todo el ancho disponible */
+            padding: 10px 25px;           /* Agrega relleno (padding) alrededor del enlace */
+        }
+   
+        .listaPrincipal a:hover { 
+            background-color: #828282;
+        }
+           
+        .sublista {     /* UL */
+            padding: 0px;
+            list-style: none;
+            left: 0px;
+            position: absolute;  /* LI PADRE RELATIVO. AQUI ABSOLUTO PARA REFERENCIARSE A EL Y NO DESPLAZARLO*/
+            top: 39px;  /* Coloca las sublistas a 35 píxeles desde la parte superior de su contenedor */
+            visibility: hidden;
+            z-index: 1; /* La pone encima*/
+        }
+
+        li:hover ul.sublista {   /* LI ACTUA SOBRE SUBLISTA */
+            visibility: visible;         
+        }
+
+        .sublista li {          /* LI DE SUBLISTA */
+            min-width: max-content;
+            background-color: #777;
+        }
+
+        .menuPrincipal .sublista li a {     /* LI SUBLISTA APLICA A SU ENLACE A */
+            background-color: #2d2d2d;
+        }
+        
+        .sublista li a:hover {      /* ENLACES SUBLISTA HOVER*/
+            background: #ff9cd9;
+         
+        }
+
+        .caja3 {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: flex-end;
+            margin-bottom: 10px;
+            min-width: 200px;
+        }
+
+        .caja3 a:hover {           /* CAja 3 A Hover */
+            text-shadow: 12px 2px 25px rgba(128, 0, 0, 1), -6px 5px 22px rgba(125, 69, 26, 1), 4px -16px 19px rgba(66, 112, 93, 1), 6px 7px 23px rgba(99, 99, 44, 1), -3px 13px 14px rgba(86, 85, 116, 1), 14px -4px 20px rgba(203, 56, 72, 1);
+        }
+
+        .caja3 a i {        /* ICONOS ENLACES */
+            margin-right: 6px;
+            color: #ff0101;
+        }
+
+    </style>
+
+
+    <header>
+        <div class="caja1">
+            <img src="./img/portatil.png" class="imagen">
+            <div class="slogan">
+                <h3>Eslogan WEB</h3>
+            </div>
+        </div>
+        <div class="caja2">   
+                <ul class="listaPrincipal">
+                    <li class="opcionPrincipal"><a class="enlaceListaPrincipal" href=""><i class="fas fa-home"></i>
+                            Inicio</a></li>
+                    <li class="opcionPrincipal"><a class="enlaceListaPrincipal" href=""><i class="fas fa-globe"></i>
+                            Acerca</a></li>
+                    <li class="opcionPrincipal"> <a class="enlaceListaPrincipal" href=""><i class="fas fa-list"></i>
+                            Servicios</a>
+                        <ul class="sublista">
+                            <li class="subOpcion"><a class="enlaceSubLista" href="">Servicio 1</a></li>
+                            <li class="subOpcion"><a class="enlaceSubLista" href="">Servicio 2</a></li>
+                            <li class="subOpcion"> <a class="enlaceSubLista" href="">Servicio 3</a></li>
+                            <li class="subOpcion"><a class="enlaceSubLista" href="">Servicio 4</a></li>
+                        </ul>
+                    </li>
+                    <li class="opcionPrincipal"><a class="enlaceListaPrincipal" href=""><i class="fas fa-envelope"></i>
+                            Contacto</a></li>
+                </ul>
+        </div>
+        <div class="caja3">
+            <a class="enlaceListaUsuario" href=""><i class="fas fa-user"></i>Login</a>
+            <a class="enlaceListaUsuario" href=""><i class="fas fa-user-plus"></i>Registro</a></li>
+        </div>
+    </header>
+
+
+</body>
+
+</html>

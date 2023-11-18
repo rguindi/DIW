@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Enlaza una hoja de estilo CSS externa desde un CDN (Content Delivery Network) que contiene los iconos de Font Awesome. -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  </head>
+<style>
+
+
+body {
+    background-color: rgb(217, 195, 195);
+    display: flex;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    /*obliga a que la altura minima del cuerpo sea el 100 del view-port*/
+    min-height: 100vh;
+}
+
+/********************** Establece estilos para el elemento MAIN******************* */
+main {
+    display: flex;
+    /* Permite que "main" crezca y ocupe el espacio disponible */
+    flex-grow: 1;
+    border-top: 12px solid rgb(175, 21, 116);
+    border-bottom: 12px solid rgb(175, 21, 116);
+}
+
+/* Establece estilos para el elemento "aside" BARRA LATERAL */
+aside {
+    background: linear-gradient(to bottom, #333333, #CCCCCC);
+    /* Establece un ancho mínimo del 12% */
+    min-width: 12%;
+    box-shadow: 10px 0 15px 0 rgba(0, 0, 0, 0.7);
+
+}
+
+/* Establece estilos para el elemento con clase "contenedorCentral" */
+.contenedorCentral {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    /* Permite que crezca y ocupe el espacio disponible */
+    flex-grow: 1;
+    overflow: hidden;
+    /* Oculta el desbordamiento del contenido si ocurre o utilizamos un slider o similares */
+}
+
+/* Establece estilos para el elemento con clase "seccion1" */
+.seccion1 {
+    justify-content: center;
+    margin-top: 25px;
+    /* Agrega un margen superior de 25 píxeles */
+    margin: 20px;
+    padding: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    /* Convierte el texto en mayúsculas */
+    text-transform: uppercase;
+    /* Establece el peso de fuente a 300 (letras finas) */
+    font-weight: 300;
+    background-color: rgb(153, 84, 84);
+    flex-grow: 1;
+    flex-wrap: wrap;
+}
+
+
+</style>
+
+  <body>
+    <main>
+
+      <!-- Barra lateral -->
+      <aside>
+        <nav></nav>
+      </aside>
+
+      <!-- Contenedor central del contenido -->
+      <div class="contenedorCentral">
+        <section class="seccion1"><article>Hola</article></section>
+        <section class="seccion1"><article></article></section>
+        <section class="seccion1"><article></article></section>
+        <section class="seccion1"><article></article></section>
+        <section class="seccion1"><article></article></section>
+      </div>
+    </main>
+  </body>
+</html>
