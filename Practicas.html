@@ -163,14 +163,55 @@
     }
 
     .articulomain:hover {
-        box-shadow: 10px 13px 23px -5px rgba(26, 207, 13, 0.85);
+      box-shadow: 10px 13px 23px -5px rgba(26, 207, 13, 0.85);
       -webkit-box-shadow: 10px 13px 23px -5px rgba(161, 235, 13, 0.85);
       -moz-box-shadow: 10px 13px 23px -5px rgba(116, 248, 0, 0.85);
       background-color: brown;
       width: 17%;
       height: 190px;
-  
+    }
 
+    .menuprincipal2 {
+      display: flex;
+    }
+
+    .opcionprincipal2 {
+      position: relative;
+      list-style: none;
+    }
+    .link-opcion2 {
+      background-color: goldenrod;
+      border: 1px solid black;
+      padding: 10px;
+    }
+    .opcionprincipal2:hover .submenu2 {
+      display: block;
+    }
+
+    .submenu2 {
+      margin: 0px;
+      padding: 0px;
+      position: absolute;
+      display: none;
+    }
+
+    .subopcion2 {
+      list-style: none;
+      margin-top: 22px;
+    }
+
+    .link-subopcion2 {
+      background-color: goldenrod;
+      border: 1px solid black;
+      padding: 10px;
+    }
+
+    .cajaheader2{
+      width: 100%;
+      display: flex;
+     justify-content: center;
+ padding: 0px; 
+ margin-top: -200px;
     }
 
     /* ----------------------------------------------------------FOOTER--------------------------------- */
@@ -260,7 +301,36 @@
         <div class="articulomain"></div>
         <div class="articulomain"></div>
       </div>
-      <div class="contenedormain"></div>
+      <div class="contenedormain">
+        <div class="cajaheader2">
+          <ul class="menuprincipal2">
+            <li class="opcionprincipal2">
+              <a class="link-opcion2" href="">Opcion 1</a>
+            </li>
+            <li class="opcionprincipal2">
+              <a class="link-opcion2" href="">Opcion 2</a>
+              <ul class="submenu2">
+                <li class="subopcion2">
+                  <a class="link-subopcion2" href="">Sub 1</a>
+                </li>
+                <li class="subopcion2">
+                  <a class="link-subopcion2" href="">Sub 1</a>
+                </li>
+                <li class="subopcion2">
+                  <a class="link-subopcion2" href="">Sub 2</a>
+                </li>
+
+                <li class="subopcion2">
+                  <a class="link-subopcion2" href="">Sub 2</a>
+                </li>
+              </ul>
+            </li>
+            <li class="opcionprincipal2">
+              <a class="link-opcion2" href="">Opcion 3</a>
+            </li>
+          </ul>
+        </div>
+      </div>
       <div class="contenedormain"></div>
       <div class="contenedormain"></div>
       <div class="contenedormain"></div>
