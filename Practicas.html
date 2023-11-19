@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="" type="image/x-icon" />
+    <link
+      href="https://fonts.cdnfonts.com/css/love-monday-2"
+      rel="stylesheet"
+    />
+
+    <title>Practicas</title>
+  </head>
+
+  <style>
+    html {
+      margin: 0px;
+      padding: 0px;
+    }
+    body {
+      margin: 0px;
+      padding: 0px;
+      background-color: aqua;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    /* ----------------------------------------------------------HEADER---------------------------------*/
+    header {
+      display: flex;
+      min-height: 15vh;
+      background-color: black;
+      justify-content: space-around;
+      width: 100%;
+      flex-wrap: nowrap;
+    }
+
+    .cajaheader {
+      background-color: orange;
+      min-width: 10px;
+      flex-grow: 1;
+      border: solid 3px black;
+      display: flex;
+      justify-content: center;
+    }
+    .cajaheader figure img {
+      max-width: 200px;
+      max-height: 200px;
+      border-radius: 15px;
+      box-shadow: 10px 13px 23px -5px rgba(0, 0, 0, 0.85);
+      -webkit-box-shadow: 10px 13px 23px -5px rgba(0, 0, 0, 0.85);
+      -moz-box-shadow: 10px 13px 23px -5px rgba(0, 0, 0, 0.85);
+    }
+    .eslogan {
+      align-self: flex-end;
+      font-family: "Love Monday", sans-serif;
+      font-size: 20px;
+      text-shadow: 2px -1px 4px rgba(255, 0, 0, 1);
+      margin-right: 40px;
+    }
+
+    a {
+      margin: 0px;
+      padding: 0px;
+      text-decoration: none;
+    }
+
+    /* ------ UL PRINCIPAL ------ */
+    .menuprincipal {
+      margin-top: 0px;
+      display: flex;
+      list-style: none;
+      justify-content: space-around;
+    }
+
+    /* ------ LI PRINCIPAL ------ */
+    .opcionprincipal {
+      position: relative;
+      align-items: flex-end;
+      display: flex;
+    }
+    /* ------ A PRINCIPAL ------ */
+    .link-opcion {
+      padding: 10px;
+      color: white;
+      border: 2px solid black;
+      background-color: rgb(0, 72, 48);
+    }
+
+    /* ------ MOSTRAR SUBMENU----- */
+    .opcionprincipal:hover .submenu {
+      display: block;
+    }
+
+    .opcionprincipal:hover .link-opcion {
+      background-color: rgb(31, 116, 87);
+    }
+
+    /* ------ UL SECUNDARIO ------ */
+    .submenu {
+      margin: 0px;
+      padding: 0px;
+      position: absolute;
+      background-color: azure;
+      list-style: none;
+      min-width: max-content;
+      display: none;
+      top: 152px;
+    }
+
+    /* ------ LI SECUNDARIO ------ */
+    .subopcion {
+      display: flex;
+      margin-left: 0px;
+      margin-right: 0px;
+    }
+
+    /* ------ A SEGUNDARIO ------ */
+    .link-subopcion {
+      padding: 9px;
+      border: 2px solid black;
+    }
+
+    .subopcion:hover .link-subopcion {
+      background-color: rgb(114, 231, 192);
+    }
+    /* ----------------------------------------------------------MAIN--------------------------------- */
+    main {
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      min-height: max-content;
+      padding: 30px;
+      justify-content: center;
+    }
+    .contenedormain {
+      margin: 0px;
+      display: flex;
+      background-color: azure;
+      border-radius: 10px;
+      max-width: 100%;
+      height: 300px;
+      align-items: flex-end;
+      border: solid 2px black;
+      margin-top: 30px;
+      margin-bottom: 30px;
+      padding: 20px;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .articulomain {
+      margin: 0px;
+      background-color: red;
+      border-radius: 14px;
+      border: 1px solid black;
+      width: 15%;
+      height: 175px;
+      box-shadow: 10px 13px 23px -5px rgba(0, 0, 0, 0.85);
+      -webkit-box-shadow: 10px 13px 23px -5px rgba(0, 0, 0, 0.85);
+      -moz-box-shadow: 10px 13px 23px -5px rgba(0, 0, 0, 0.85);
+      transition: 0.3s;
+    }
+
+    .articulomain:hover {
+        box-shadow: 10px 13px 23px -5px rgba(26, 207, 13, 0.85);
+      -webkit-box-shadow: 10px 13px 23px -5px rgba(161, 235, 13, 0.85);
+      -moz-box-shadow: 10px 13px 23px -5px rgba(116, 248, 0, 0.85);
+      background-color: brown;
+      width: 17%;
+      height: 190px;
+  
+
+    }
+
+    /* ----------------------------------------------------------FOOTER--------------------------------- */
+
+    footer {
+      border-top: 5px solid orangered;
+      min-height: 10vh;
+      background-color: black;
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+    }
+    .cajafooter {
+      background-color: gray;
+      width: 25%;
+      margin: 15px;
+      border-radius: 15px;
+    }
+  </style>
+  <body>
+    <header>
+      <div class="cajaheader">
+        <figure>
+          <img src="./img/img1.jpg" />
+        </figure>
+
+        <div class="eslogan">
+          <h3>Mi pagina Web</h3>
+        </div>
+      </div>
+      <div class="cajaheader">
+        <ul class="menuprincipal">
+          <li class="opcionprincipal">
+            <a class="link-opcion" href="">Opcion 1</a>
+          </li>
+          <li class="opcionprincipal">
+            <a class="link-opcion" href="">Opcion 2</a>
+            <ul class="submenu">
+              <li class="subopcion">
+                <a class="link-subopcion" href="">Sub 1</a>
+              </li>
+              <li class="subopcion">
+                <a class="link-subopcion" href="">Sub 2</a>
+              </li>
+            </ul>
+          </li>
+          <li class="opcionprincipal">
+            <a class="link-opcion" href="">Opcion 3</a>
+          </li>
+        </ul>
+      </div>
+      <div class="cajaheader">
+        <ul class="menuprincipal">
+          <li class="opcionprincipal">
+            <a class="link-opcion" href="">Opcion 1</a>
+          </li>
+          <li class="opcionprincipal">
+            <a class="link-opcion" href="">Opcion 2</a>
+            <ul class="submenu">
+              <li class="subopcion">
+                <a class="link-subopcion" href="">Sub 1</a>
+              </li>
+              <li class="subopcion">
+                <a class="link-subopcion" href="">Sub 1</a>
+              </li>
+              <li class="subopcion">
+                <a class="link-subopcion" href="">Sub 2</a>
+              </li>
+
+              <li class="subopcion">
+                <a class="link-subopcion" href="">Sub 2</a>
+              </li>
+            </ul>
+          </li>
+          <li class="opcionprincipal">
+            <a class="link-opcion" href="">Opcion 3</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <div class="contenedormain">
+        <div class="articulomain"></div>
+        <div class="articulomain"></div>
+        <div class="articulomain"></div>
+        <div class="articulomain"></div>
+        <div class="articulomain"></div>
+        <div class="articulomain"></div>
+      </div>
+      <div class="contenedormain"></div>
+      <div class="contenedormain"></div>
+      <div class="contenedormain"></div>
+      <div class="contenedormain"></div>
+    </main>
+    <footer>
+      <div class="cajafooter"></div>
+      <div class="cajafooter"></div>
+      <div class="cajafooter"></div>
+    </footer>
+  </body>
+</html>

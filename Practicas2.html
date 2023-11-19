@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista</title>
+</head>
+<style>
+.menu {
+    display: flex;
+    padding: 0px;
+    margin: 0px;
+ 
+}
+
+.menu > li {
+    list-style: none;
+    position: relative;
+    background-color: antiquewhite;
+    border: 1px solid black;
+    
+}
+
+.menu > li:hover {
+    background-color: rgb(253, 169, 59);
+   
+}
+
+
+.menu > li > ul {
+    position: absolute;
+    padding: 0px;
+    margin: 0px;
+    display: none;
+    margin-top: 10px;
+    margin-left: -11px;
+}
+
+.menu > li:hover > ul {
+    display: block;
+}
+
+.menu > li > ul > li {
+    list-style: none;
+    background-color: antiquewhite;
+    border: 1px solid black;
+    
+}
+
+.menu > li > ul > li:hover {
+    background-color: rgb(253, 169, 59);
+
+    
+}
+
+li{
+    padding: 10px;
+}
+</style>
+<body>
+    <ul class="menu">
+        <li>Opcion</li>
+        <li>Opcion  <ul>
+            <li>Opcion</li>
+            <li>Opcion</li>
+            <li>Opcion</li>
+            <li>Opcion</li>
+        </ul>
+        </li>
+        <li>Opcion</li>
+        <li>Opcion</li>
+    </ul>
+    
+</body>
+</html>

@@ -1,0 +1,31 @@
+
+
+---------------FUENTES--------------
+https://www.cdnfonts.com/
+
+Ejemplo:
+<link href="https://fonts.cdnfonts.com/css/love-monday-2" rel="stylesheet">
+font-family: 'Love Monday', sans-serif;
+                                                
+
+-------------SOMBRAS, GRADIENTES, BORDES, y mas....-----------
+https://cssgenerator.org/
+
+TEXTOS: 
+https://cssgenerator.org/text-shadow-css-generator.html
+Ejemplo:
+text-shadow: 2px -1px 4px rgba(255,0,0,1);
+
+CAJAS:
+https://cssgenerator.org/box-shadow-css-generator.html
+Ejemplo:
+box-shadow: 10px 13px 23px -5px rgba(0,0,0,0.85);
+-webkit-box-shadow: 10px 13px 23px -5px rgba(0,0,0,0.85);
+-moz-box-shadow: 10px 13px 23px -5px rgba(0,0,0,0.85);
+
+GRADIENTES:
+https://cssgenerator.org/gradient-css-generator.html
+background: #951e1e;
+background: linear-gradient(32deg,#951e1e 0%, #ff8100 80%);
+background: -webkit-linear-gradient(32deg,#951e1e 0%, #ff8100 80%);
+background: -moz-linear-gradient(32deg,#951e1e 0%, #ff8100 80%);
