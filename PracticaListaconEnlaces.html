@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <style>
+    body{
+
+        margin: 0px;
+        padding: 20px;
+        background-color: black;
+    }
+
+    a{
+        color: aliceblue;
+        text-decoration: none;
+        font-size: 18px;
+        background-color: blueviolet;
+        border: 2px solid red;
+        padding: 8px;
+        text-shadow: 2px -1px 4px rgba(255,0,0,1);
+        box-shadow: 10px 13px 23px -5px rgba(255, 255, 255, 0.85);
+        -webkit-box-shadow: 10px 13px 23px -5px rgba(255, 255, 255, 0.85);
+        -moz-box-shadow: 10px 13px 23px -5px rgba(255, 255, 255, 0.85);
+
+    }
+
+    li{
+        list-style: none;
+        min-width: max-content;
+    }
+
+    ul{
+        margin: 0px;
+        padding: 0px;
+    }
+    .listaPrincipal{
+    display: flex;
+
+    }
+    .opcionPrincipal{
+        position: relative;
+    }
+    .opcionPrincipal:hover  .enlaceListaPrincipal{
+        background-color: blue;
+    }
+
+    .opcionPrincipal:hover .sublista{
+        display: block;
+    }
+  
+    .subOpcion{
+        margin-top: 18px;
+    }
+
+    .sublista{
+        position: absolute;
+        display: none;
+    }
+    .subOpcion:hover .enlaceSubLista{
+       background-color: rgb(31, 155, 155);
+    }
+
+
+  </style>
+  <body>
+    <main>
+      <nav class="menuPrincipal">
+        <ul class="listaPrincipal">
+          <li class="opcionPrincipal">
+            <a class="enlaceListaPrincipal" href=""
+              ><i class="fas fa-home"></i> Inicio</a
+            >
+          </li>
+          <li class="opcionPrincipal">
+            <a class="enlaceListaPrincipal" href=""
+              ><i class="fas fa-globe"></i> Acerca</a
+            >
+          </li>
+          <li class="opcionPrincipal">
+            <a class="enlaceListaPrincipal" href=""
+              ><i class="fas fa-list"></i> Servicios</a
+            >
+            <ul class="sublista">
+              <li class="subOpcion">
+                <a class="enlaceSubLista" href="">Servicio 1</a>
+              </li>
+              <li class="subOpcion">
+                <a class="enlaceSubLista" href="">Servicio 2</a>
+              </li>
+              <li class="subOpcion">
+                <a class="enlaceSubLista" href="">Servicio 3</a>
+              </li>
+              <li class="subOpcion">
+                <a class="enlaceSubLista" href="">Servicio 4</a>
+              </li>
+            </ul>
+          </li>
+          <li class="opcionPrincipal">
+            <a class="enlaceListaPrincipal" href=""
+              ><i class="fas fa-envelope"></i> Contacto</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </main>
+  </body>
+</html>
