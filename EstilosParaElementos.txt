@@ -29,3 +29,25 @@ background: #951e1e;
 background: linear-gradient(32deg,#951e1e 0%, #ff8100 80%);
 background: -webkit-linear-gradient(32deg,#951e1e 0%, #ff8100 80%);
 background: -moz-linear-gradient(32deg,#951e1e 0%, #ff8100 80%);
+
+
+
+LISTAS:
+  ul{
+        margin: 0px;
+        padding: 0px;
+    }
+
+
+    li principal{
+        position: relative;
+     }
+
+       li principal:hover ul sublista{
+        display: block;
+     }
+
+     ul sublista{
+        position: absolute;
+        display: none;
+     }
