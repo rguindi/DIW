@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles.css">
+    <title>Menú Responsive</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5em;
+        }
+
+        nav {
+            display: flex;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+        }
+
+        .nav-links li {
+            margin-right: 20px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .menu-toggle {
+            display: none;
+            font-size: 1.5em;
+            cursor: pointer;
+        }
+
+
+        
+        @media only screen and (max-width: 800px) {
+
+            header{
+                justify-content: flex-start;
+            }
+
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                width: 100%;
+                position: absolute;
+                background-color: #333;
+                top: 60px;
+                left: 0;
+              
+            }
+
+            .nav-links.show {
+                margin-top:5px;
+                padding:0;
+                display: flex;
+            }
+
+            .nav-links li {
+                display:flex;
+                justify-content: center;               
+                margin:10px 5px 10px 5px;
+                padding-bottom: 3px;
+                border-bottom: 1px solid #555;
+            }
+
+            .menu-toggle {
+                display: block;
+            }
+
+            .menu-toggle::before{
+                content: "Menu Servicios";
+                margin-right: 20px;
+                margin-left: 50px;
+                font-size: 12px;
+                
+            }
+
+            
+
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">Tu Logo</div>
+        
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Servicios</a></li>
+                <li><a href="#">Acerca de</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="menu-toggle">&#9776;</div>
+
+        <nav class="menu2">
+            <div class="menu-toggle">&#9776;</div>
+            <ul class="nav-links">               
+                <li><a href="#">Login</a></li>
+                <li><a href="#">registro</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Contenido de la página -->
+    </main>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const menuToggle = document.querySelector('.menu-toggle');
+            const navLinks = document.querySelector('.nav-links');
+
+            menuToggle.addEventListener('click', function () {
+                navLinks.classList.toggle('show');
+            });
+        });
+
+        document.addEventListener('DOMContentLoaded', function () {
+            const menuToggle2 = document.querySelector('.menu-toggle2');
+            const navLinks2 = document.querySelector('.nav-links2');
+
+            menuToggle2.addEventListener('click', function () {
+                navLinks2.classList.toggle('show');
+            });
+        });
+
+    </script>
+</body>
+
+</html>
