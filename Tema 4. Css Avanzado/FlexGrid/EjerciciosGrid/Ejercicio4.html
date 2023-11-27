@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      .contenedor {
+        display: grid;
+        grid-template-columns: 100px 100px 100px 100px;
+        grid-template-rows: 100px 100px ;
+       justify-content: center;
+       align-content: center;
+      
+      }
+
+      .celda1{
+        background-color: rgb(0, 0, 0);
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+        
+      }
+      .celda2{
+        background-color: rgb(204, 33, 33);
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+      }
+      .celda3{
+        background-color: rgb(197, 74, 74);
+        grid-column: 3 / 4;
+        grid-row: 1 / 2;
+      }
+      .celda4{
+        background-color: rgb(21, 138, 17);
+        grid-column: 4 / 5;
+        grid-row: 1 / 2;
+      }
+      .celda5{
+        background-color: rgb(180, 0, 0);
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+      }
+      .celda6{
+        background-color: rgb(187, 122, 38);
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+      }
+
+      .celda7{
+        background-color: rgb(0, 0, 0);
+        grid-column: 3 / 4;
+        grid-row: 2 / 3;
+        
+      }
+      .celda8{
+        background-color: rgb(204, 33, 33);
+        grid-column: 4 / 5;
+        grid-row: 2 / 3;
+      }
+
+/* --------------------------------------------------------------------- */
+
+
+    </style>
+  </head>
+  <body>
+    <p>
+      Ejercicio 4:
+
+      Crea otro contenedor de cuadrícula con cuatro columnas y dos filas. 
+      Alinea los elementos dentro de las celdas en el centro tanto horizontal como verticalmente.
+    </p>
+
+    <div class="contenedor">
+      <div class="celda1">1</div>
+      <div class="celda2">2</div>
+      <div class="celda3">3</div>
+      <div class="celda4">4</div>
+      <div class="celda5">5</div>
+      <div class="celda6">6</div>
+      <div class="celda7">7</div>
+      <div class="celda8">8</div>
+
+    </div>
+
+  </body>
+</html>

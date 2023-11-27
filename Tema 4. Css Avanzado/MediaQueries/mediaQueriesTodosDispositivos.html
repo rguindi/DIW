@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Hoja de estilo para PC -->
+  <link rel="stylesheet" media="screen and (min-width: 900px)" href="estilos-pc.css">
+
+  <!-- Hoja de estilo para tablet -->
+  <link rel="stylesheet" media="screen and (min-width: 600px) and (max-width: 899px)" href="estilos-tablet.css">
+
+  <!-- Hoja de estilo para móvil -->
+  <link rel="stylesheet" media="screen and (max-width: 599px)" href="estilos-movil.css">
+
+  <title>Mi Página</title>
+</head>
+<body>
+  <!-- Contenido de la página -->
+
+  <script>
+    function cargarHojaEstilo() {
+      var anchoPantalla = window.innerWidth;
+
+      if (anchoPantalla >= 900) {
+        document.getElementById('estilos-actuales').href = 'estilos-pc.css';
+      } else if (anchoPantalla >= 600 && anchoPantalla <= 899) {
+        document.getElementById('estilos-actuales').href = 'estilos-tablet.css';
+      } else {
+        document.getElementById('estilos-actuales').href = 'estilos-movil.css';
+      }
+    }
+
+    // Ejecutar la función cuando la página se carga y cuando se redimensiona la pantalla
+    window.addEventListener('load', cargarHojaEstilo);
+    window.addEventListener('resize', cargarHojaEstilo);
+  </script>
+
+</body>
+</html>
