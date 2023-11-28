@@ -9,62 +9,74 @@
       .contenedor {
         display: grid;
         grid-template-columns: 100px 100px 100px 100px;
-        grid-template-rows: 100px 100px;
-        justify-items: center;
-        align-items: center;
+        grid-template-rows: 100px 100px ;
+       justify-items: center;
+       align-items: center;
+      
       }
 
-      .celda1 {
+      .celda1{
         background-color: rgb(0, 0, 0);
         grid-column: 1 / 2;
         grid-row: 1 / 2;
+        
       }
-      .celda2 {
+      .celda2{
         background-color: rgb(204, 33, 33);
         grid-column: 2 / 3;
         grid-row: 1 / 2;
       }
-      .celda3 {
+      .celda3{
         background-color: rgb(197, 74, 74);
         grid-column: 3 / 4;
         grid-row: 1 / 2;
       }
-      .celda4 {
+      .celda4{
         background-color: rgb(21, 138, 17);
         grid-column: 4 / 5;
         grid-row: 1 / 2;
       }
-      .celda5 {
+      .celda5{
         background-color: rgb(180, 0, 0);
         grid-column: 1 / 2;
         grid-row: 2 / 3;
       }
-      .celda6 {
+      .celda6{
         background-color: rgb(187, 122, 38);
         grid-column: 2 / 3;
         grid-row: 2 / 3;
       }
 
-      .celda7 {
+      .celda7{
         background-color: rgb(0, 0, 0);
         grid-column: 3 / 4;
         grid-row: 2 / 3;
+        
       }
-      .celda8 {
+      .celda8{
         background-color: rgb(204, 33, 33);
         grid-column: 4 / 5;
         grid-row: 2 / 3;
       }
- 
+      .celda9 {
+        background-color: rgb(79, 204, 33);
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+      }
 
-      /* --------------------------------------------------------------------- */
+/* --------------------------------------------------------------------- */
+
+
     </style>
   </head>
   <body>
     <p>
-      Ejercicio 4: Crea otro contenedor de cuadrícula con cuatro columnas y dos
-      filas. Alinea los elementos dentro de las celdas en el centro tanto
-      horizontal como verticalmente.
+      Ejercicio 6:
+
+      Usa la propiedad grid-area para colocar un elemento en el segundo 
+      contenedor de cuadrícula creado en el ejercicio 4 en una posición personalizada.
     </p>
 
     <div class="contenedor">
@@ -77,7 +89,8 @@
       <div class="celda7"><p>7</p></div>
       <div class="celda8"><p>8</p></div>
 
-    
+      <div class="celda9"><p>9</p></div>
     </div>
+
   </body>
 </html>
