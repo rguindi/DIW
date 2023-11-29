@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      .contenedor {
+        height: 100px;
+        display: grid;
+        grid-template-columns: 3fr 1fr 3fr;
+
+        
+      }
+
+      .celda1{
+        background-color: rgb(0, 0, 0);
+        grid-column: 1 / 2;
+        
+      }
+      .celda2{
+        background-color: rgb(204, 33, 33);
+        grid-column: 2 / 3;
+      }
+      .celda3{
+        background-color: rgb(197, 74, 74);
+        grid-column: 3 / 4;
+      }
+   
+
+
+    </style>
+  </head>
+  <body>
+    <p>
+      Ejercicio 8:
+
+      Crea un contenedor de cuadrícula con tres columnas, 
+      donde la primera y la última columna ocupen un espacio proporcionalmente mayor que la columna del medio.
+    </p>
+
+    <div class="contenedor">
+      <div class="celda1"></div>
+      <div class="celda2"></div>
+      <div class="celda3"></div>
+   
+   
+
+    </div>
+  </body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      .contenedor {
+        display: grid;
+        grid-template-columns:repeat(2, auto); 
+        grid-template-rows: 100px 100px
+        
+      }
+
+      .celda1{
+        background-color: rgb(0, 0, 0);
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+        
+      }
+      .celda2{
+        background-color: rgb(204, 33, 33);
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+      }
+      .celda3{
+        background-color: rgb(197, 74, 74);
+        grid-column: 1 / 2;
+        grid-row: 2 /3;
+      }
+      .celda4{
+        background-color: rgb(21, 138, 17);
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+      }
+
+
+    </style>
+  </head>
+  <body>
+    <p>
+      Ejercicio 11:
+
+      Crea un diseño de cuadrícula responsivo que tenga dos columnas y se ajuste automáticamente al tamaño del contenedor.
+    </p>
+
+    <div class="contenedor">
+      <div class="celda1"></div>
+      <div class="celda2"></div>
+      <div class="celda3"></div>
+      <div class="celda4"></div>
+    </div>
+  </body>
+</html>
