@@ -10,7 +10,7 @@
         display: grid;
         grid-template-columns:repeat(3, minmax(100px, auto)); 
         grid-template-rows: 100px 100px 100px;
-        place-items: center;
+        place-items: stretch;
         
       }
 
@@ -36,11 +36,14 @@
         grid-row: 2 / 3;
       }
       .celda5{
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
         background-color: rgb(180, 0, 0);
         grid-column: 2 / 3;
         grid-row: 2 / 3;
-        justify-self: right;
-        align-self: flex-end;
+        /* justify-self: right;
+        align-self: flex-end; */
       }
       .celda6{
         background-color: rgb(187, 122, 38);
