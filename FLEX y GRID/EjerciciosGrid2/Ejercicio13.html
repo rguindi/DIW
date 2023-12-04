@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      .contenedor {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        gap: 20px;
+        
+      }
+
+      .c{
+        border: 1px solid black;
+      }
+
+      img{
+        width: 100%;
+        height: 80%;
+      }
+
+      h5
+      {
+        text-align: center;
+      }
+     
+      .celda1{
+    
+        grid-column: 1 / 2;
+
+     
+      }
+      .celda2{
+   
+        grid-column: 2 / 3;
+        
+      }
+      
+
+    </style>
+  </head>
+  <body>
+    <p>
+      Menú de Navegación Responsivo: Crea un menú de navegación que se transforme en un menú
+     desplegable cuando el ancho de la pantalla sea menor a 600px. </p>
+
+    <div class="contenedor">
+      <div class="c celda1">
+        <h5>Opcion 1</h5>
+      </div>
+      <div class="c celda2">
+       <h5>Opcion 2</h5>
+      </div>
+      <div class="c celda3">
+        <h5>Opcion 3</h5>
+      </div>
+      <div class="c celda4">
+        <h5>Opcion 4</h5>
+      </div>
+      <div class="c celda5">
+        <h5>Opcion 5</h5>
+      </div>
+      <div class="c celda6">
+        <h5>Opcion6</h5>
+      </div>
+    </div>
+  </body>
+</html>

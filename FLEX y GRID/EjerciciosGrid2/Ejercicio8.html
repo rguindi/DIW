@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      .contenedor {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(150px, 1fr));
+        grid-template-rows: 300px 300px;
+        
+      }
+
+      .c{
+        border: 1px solid black;
+      }
+
+      img{
+        width: 100%;
+        height: 80%;
+      }
+
+      h5
+      {
+        text-align: center;
+      }
+     
+      .celda1{
+        background-color: rgb(201, 77, 77);
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+     
+      }
+      .celda2{
+        background-color: rgb(33, 113, 204);
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+      }
+      .celda3{
+        background-color: rgb(197, 74, 74);
+        grid-column: 3 / 4;
+        grid-row: 1 / 2;
+      }
+
+      .celda4{
+        background-color: rgb(172, 164, 164);
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+        
+      }
+      .celda5{
+        background-color: rgb(204, 150, 33);
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+      }
+      .celda6{
+        background-color: rgb(168, 74, 197);
+        grid-column: 3 / 4;
+        grid-row: 2 / 3;
+      }
+
+    </style>
+  </head>
+  <body>
+    <p>
+      8.
+      Cuadrícula de 
+      Galería de Imágenes: Diseña una cuadrícula de galería de 
+      imágenes donde cada imagen tenga un tamaño mínimo de 150px y 
+      un tamaño máximo de 1fr. </p>
+
+    <div class="contenedor">
+      <div class="c celda1">
+        <img src="https://i.ebayimg.com/images/g/EE0AAOxyBotTZgW7/s-l1600.jpg" alt="">
+        <h5>Lagartija</h5>
+      </div>
+      <div class="c celda2">
+        <img src="https://i.ebayimg.com/images/g/EE0AAOxyBotTZgW7/s-l1600.jpg" alt="">
+        <h5>Lagartija</h5>
+      </div>
+      <div class="c celda3">
+        <img src="https://i.ebayimg.com/images/g/EE0AAOxyBotTZgW7/s-l1600.jpg" alt="">
+        <h5>Lagartija</h5>
+      </div>
+      <div class="c celda4">
+        <img src="https://i.ebayimg.com/images/g/EE0AAOxyBotTZgW7/s-l1600.jpg" alt="">
+        <h5>Lagartija</h5>
+      </div>
+      <div class="c celda5">
+        <img src="https://i.ebayimg.com/images/g/EE0AAOxyBotTZgW7/s-l1600.jpg" alt="">
+        <h5>Lagartija</h5>
+      </div>
+      <div class="c celda6">
+        <img src="https://i.ebayimg.com/images/g/EE0AAOxyBotTZgW7/s-l1600.jpg" alt="">
+        <h5>Lagartija</h5>
+      </div>
+    </div>
+  </body>
+</html>

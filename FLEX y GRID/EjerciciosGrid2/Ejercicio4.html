@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      .contenedor {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 30px
+        
+      }
+
+      .celda1{
+        background-color: rgb(0, 0, 0);
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+        
+      }
+      .celda2{
+        background-color: rgb(204, 33, 33);
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+      }
+      .celda3{
+        background-color: rgb(197, 74, 74);
+        grid-column: 3 / 4;
+        grid-row: 1 / 2;
+      }
+
+    </style>
+  </head>
+  <body>
+    <p>
+      4.
+      Barra de Navegación Responsiva: Crea una barra de navegación que tenga tres elementos de menú. Haz que los elementos de menú se distribuyan
+       uniformemente en la barra y que la barra se ajuste al ancho del contenedor.
+    </p>
+
+    <div class="contenedor">
+      <div class="celda1"></div>
+      <div class="celda2"></div>
+      <div class="celda3"></div>
+    </div>
+  </body>
+</html>

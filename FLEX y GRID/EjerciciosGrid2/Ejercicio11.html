@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      .contenedor {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 300px;
+        gap: 2px;
+        align-items: end;
+      }
+
+      .c{
+        border: 1px solid black;
+      }
+
+      img{
+        width: 60%;
+        height: 80%;
+        padding: 20px;
+      }
+
+      h5
+      {
+        text-align: center;
+      }
+     
+      .celda1{
+        /* background-color: rgb(201, 77, 77); */
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+        
+     
+      }
+      .celda2{
+        /* background-color: rgb(33, 113, 204); */
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+      }
+      
+
+    </style>
+  </head>
+  <body>
+    <p>
+      Encabezado con Logo: Crea un encabezado que contenga un logo a la izquierda y un menú 
+      de navegación a la derecha. Asegúrate de que el logo ocupe dos filas.
+    <div class="contenedor">
+      <div class="c celda1">
+        <img src="https://i.ebayimg.com/images/g/EE0AAOxyBotTZgW7/s-l1600.jpg" alt="">
+        <h5>Lagartija</h5>
+      </div>
+      <div class="c celda2">
+        <h5>Opcion 1</h5>
+      </div>
+      <div class="c celda3">
+        <h5>Opcion 2</h5>
+      </div>
+      <div class="c celda4">
+        <h5>Opcion 3</h5>
+      </div>
+      <div class="c celda5">
+        <h5>Opcion 4</h5>
+      </div>
+      <div class="c celda6">
+        <h5>opcion 5</h5>
+      </div>
+    </div>
+  </body>
+</html>

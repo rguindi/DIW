@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      .contenedor {
+        display: grid;
+        grid-template-columns: 66% 33%;
+        grid-template-rows: 100vh;
+        
+      }
+
+      .celda1{
+        background-color: rgb(109, 98, 98);
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+        
+      }
+      .celda2{
+        background-color: rgb(204, 33, 33);
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+      }
+    
+
+    </style>
+  </head>
+  <body>
+    <p>
+      7.
+      Diseño de Blog: Crea un diseño de blog con una columna principal que 
+      ocupe dos tercios del ancho y una barra lateral que ocupe un tercio
+       del ancho.
+
+    </p>
+
+    <div class="contenedor">
+      <div class="celda1">Contenido 1</div>
+      <div class="celda2">Contenido 2</div>
+  
+    </div>
+  </body>
+</html>

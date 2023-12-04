@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      .contenedor {
+        display: grid;
+        grid-template-columns: repeat(8, 100px);
+        grid-template-rows: repeat(8, 100px);
+        gap: 1px;
+      }
+
+      .celda1 {
+        background-color: rgb(240, 219, 219);
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+      }
+      .celda2 {
+        background-color: rgb(46, 44, 44);
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+      }
+
+      .celda3 {
+        background-color: rgb(240, 219, 219);
+        grid-column: 3 / 4;
+        grid-row: 1 / 2;
+      }
+      .celda4 {
+        background-color: rgb(46, 44, 44);
+        grid-column: 4 / 5;
+        grid-row: 1 / 2;
+      }
+
+      .celda5 {
+        background-color: rgb(240, 219, 219);
+        grid-column: 5 / 6;
+        grid-row: 1 / 2;
+      }
+      .celda6 {
+        background-color: rgb(46, 44, 44);
+        grid-column: 6 / 7;
+        grid-row: 1 / 2;
+      }
+
+      .celda7 {
+        background-color: rgb(240, 219, 219);
+        grid-column: 7 / 8;
+        grid-row: 1 / 2;
+      }
+      .celda8 {
+        background-color: rgb(46, 44, 44);
+        grid-column: 8 / 9;
+        grid-row: 1 / 2;
+      }
+
+      .celda9 {
+        background-color: rgb(46, 44, 44);
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+      }
+
+      .celda10 {
+        background-color: rgb(240, 219, 219);
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+      }
+      .celda11 {
+        background-color: rgb(46, 44, 44);
+        grid-column: 3 / 4;
+        grid-row: 2 / 3;
+      }
+
+      .celda12 {
+        background-color: rgb(240, 219, 219);
+        grid-column: 4 / 5;
+        grid-row: 2 / 3;
+      }
+      .celda13 {
+        background-color: rgb(46, 44, 44);
+        grid-column: 5 / 6;
+        grid-row: 2 / 3;
+      }
+
+      .celda14 {
+        background-color: rgb(240, 219, 219);
+        grid-column: 6 / 7;
+        grid-row: 2 / 3;
+      }
+      .celda15 {
+        background-color: rgb(46, 44, 44);
+        grid-column: 7 / 8;
+        grid-row: 2 / 3;
+      }
+      .celda16 {
+        background-color: rgb(240, 219, 219);
+        grid-column: 8 / 9;
+        grid-row: 2 / 3;
+      }
+      .celda17 {
+        background-color: rgb(240, 219, 219);
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+      }
+      .celda18 {
+        background-color: rgb(46, 44, 44);
+        grid-column: 2 / 3;
+        grid-row: 3 / 4;
+      }
+      .celda19 {
+        background-color: rgb(240, 219, 219);
+        grid-column: 3 / 4;
+        grid-row: 3 / 4;
+      }
+      .celda20 {
+        background-color: rgb(46, 44, 44);
+        grid-column: 4 / 5;
+        grid-row: 3 / 4;
+      }
+      .celda21 {
+        background-color: rgb(240, 219, 219);
+        grid-column: 5 / 6;
+        grid-row: 3 / 4;
+      }
+      .celda22 {
+        background-color: rgb(46, 44, 44);
+        grid-column: 6 / 7;
+        grid-row: 3 / 4;
+      }
+      .celda23 {
+        background-color: rgb(240, 219, 219);
+        grid-column: 7 / 8;
+        grid-row: 3 / 4;
+      }
+      .celda24 {
+        background-color: rgb(46, 44, 44);
+        grid-column: 8 / 9;
+        grid-row: 3 / 4;
+      }
+      .celda25 {
+        background-color: rgb(46, 44, 44);
+        grid-column: 1 / 2;
+        grid-row: 4 / 5;
+      }
+      .celda26 {
+        background-color: rgb(240, 219, 219);
+        grid-column: 2 / 3;
+        grid-row: 4 / 5;
+      }
+      .celda27 {
+        background-color: rgb(46, 44, 44);
+        grid-column: 3 / 4;
+        grid-row: 4 / 5;
+      }
+      .celda28 {
+        background-color: rgb(240, 219, 219);
+        grid-column: 4 / 5;
+        grid-row: 4 / 5;
+      }
+      .celda29 {
+        background-color: rgb(46, 44, 44);
+        grid-column: 5 / 6;
+        grid-row: 4 / 5;
+      }
+      .celda30 {
+        background-color: rgb(240, 219, 219);
+        grid-column: 6 / 7;
+        grid-row: 4 / 5;
+      }
+      .celda31 {
+        background-color: rgb(46, 44, 44);
+        grid-column: 7 / 8;
+        grid-row: 4 / 5;
+      }
+      .celda32 {
+        background-color: rgb(240, 219, 219);
+        grid-column: 8 / 9;
+        grid-row: 4 / 5;
+      }
+      .celda33 {
+        background-color: rgb(240, 219, 219);
+        grid-column: 1 / 2;
+        grid-row: 5 / 6;
+      }
+      .celda34 {
+        background-color: rgb(46, 44, 44);
+        grid-column: 2 / 3;
+        grid-row: 5 / 6;
+      }
+      .celda35 {
+        background-color: rgb(240, 219, 219);
+        grid-column: 3 / 4;
+        grid-row: 5 / 6;
+      }
+      .celda36 {
+        background-color: rgb(46, 44, 44);
+        grid-column: 4 / 5;
+        grid-row: 5 / 6;
+      }
+      .celda37 {
+        background-color: rgb(240, 219, 219);
+        grid-column: 5 / 6;
+        grid-row: 5 / 6;
+      }
+      .celda38 {
+        background-color: rgb(46, 44, 44);
+        grid-column: 6 / 7;
+        grid-row: 5 / 6;
+      }
+      .celda39 {
+        background-color: rgb(240, 219, 219);
+        grid-column: 7 / 8;
+        grid-row: 5 / 6;
+      }
+      .celda40 {
+        background-color: rgb(46, 44, 44);
+        grid-column: 8 / 9;
+        grid-row: 5 / 6;
+      }
+      .celda41 {
+        background-color: rgb(46, 44, 44);
+        grid-column: 1 / 2;
+        grid-row: 6 / 7;
+      }
+      .celda42 {
+        background-color: rgb(240, 219, 219);
+        grid-column: 2 / 3;
+        grid-row: 6 / 7;
+      }
+      .celda43 {
+        background-color: rgb(46, 44, 44);
+        grid-column: 3 / 4;
+        grid-row: 6 / 7;
+      }
+      .celda44 {
+        background-color: rgb(240, 219, 219);
+        grid-column: 4 / 5;
+        grid-row: 6 / 7;
+      }
+      .celda45 {
+        background-color: rgb(46, 44, 44);
+        grid-column: 5 / 6;
+        grid-row: 6 / 7;
+      }
+      .celda46 {
+        background-color: rgb(240, 219, 219);
+        grid-column: 6 / 7;
+        grid-row: 6 / 7;
+      }
+      .celda47 {
+        background-color: rgb(46, 44, 44);
+        grid-column: 7 / 8;
+        grid-row: 6 / 7;
+      }
+      .celda48 {
+        background-color: rgb(240, 219, 219);
+        grid-column: 8 / 9;
+        grid-row: 6 / 7;
+      }
+      .celda49 {
+        background-color: rgb(240, 219, 219);
+        grid-column: 1 / 2;
+        grid-row: 7 / 8;
+      }
+      .celda50 {
+        background-color: rgb(46, 44, 44);
+        grid-column: 2 / 3;
+        grid-row: 7 / 8;
+      }
+      .celda51 {
+        background-color: rgb(240, 219, 219);
+        grid-column: 3 / 4;
+        grid-row: 7 / 8;
+      }
+      .celda52 {
+        background-color: rgb(46, 44, 44);
+        grid-column: 4 / 5;
+        grid-row: 7 / 8;
+      }
+      .celda53 {
+        background-color: rgb(240, 219, 219);
+        grid-column: 5 / 6;
+        grid-row: 7 / 8;
+      }
+      .celda54 {
+        background-color: rgb(46, 44, 44);
+        grid-column: 6 / 7;
+        grid-row: 7 / 8;
+      }
+      .celda55 {
+        background-color: rgb(240, 219, 219);
+        grid-column: 7 / 8;
+        grid-row: 7 / 8;
+      }
+      .celda56 {
+        background-color: rgb(46, 44, 44);
+        grid-column: 8 / 9;
+        grid-row: 7 / 8;
+      }
+      .celda57 {
+        background-color: rgb(46, 44, 44);
+        grid-column: 1 / 2;
+        grid-row: 8 / 9;
+      }
+      .celda58 {
+        background-color: rgb(240, 219, 219);
+        grid-column: 2 / 3;
+        grid-row: 8 / 9;
+      }
+      .celda59 {
+        background-color: rgb(46, 44, 44);
+        grid-column: 3 / 4;
+        grid-row: 8 / 9;
+      }
+      .celda60 {
+        background-color: rgb(240, 219, 219);
+        grid-column: 4 / 5;
+        grid-row: 8 / 9;
+      }
+      .celda61 {
+        background-color: rgb(46, 44, 44);
+        grid-column: 5 / 6;
+        grid-row: 8 / 9;
+      }
+      .celda62 {
+        background-color: rgb(240, 219, 219);
+        grid-column: 6 / 7;
+        grid-row: 8 / 9;
+      }
+      .celda63 {
+        background-color: rgb(46, 44, 44);
+        grid-column: 7 / 8;
+        grid-row: 8 / 9;
+      }
+      .celda64 {
+        background-color: rgb(240, 219, 219);
+        grid-column: 8 / 9;
+        grid-row: 8 / 9;
+      }
+
+      
+
+    </style>
+  </head>
+  <body>
+    <p>
+      9. Diseño de Tablero: Crea un diseño de tablero de juego con una
+      cuadrícula de 8x8. Alterna los colores de fondo de las celdas para simular
+      un tablero de ajedrez.
+    </p>
+
+    <div class="contenedor">
+      <div class="celda1"></div>
+      <div class="celda2"></div>
+      <div class="celda3"></div>
+      <div class="celda4"></div>
+      <div class="celda5"></div>
+      <div class="celda6"></div>
+      <div class="celda7"></div>
+      <div class="celda8"></div>
+      <div class="celda9"></div>
+      <div class="celda10"></div>
+      <div class="celda11"></div>
+      <div class="celda12"></div>
+      <div class="celda13"></div>
+      <div class="celda14"></div>
+      <div class="celda15"></div>
+      <div class="celda16"></div>
+      <div class="celda17"></div>
+      <div class="celda18"></div>
+      <div class="celda19"></div>
+      <div class="celda20"></div>
+      <div class="celda21"></div>
+      <div class="celda22"></div>
+      <div class="celda23"></div>
+      <div class="celda24"></div>
+      <div class="celda25"></div>
+      <div class="celda26"></div>
+      <div class="celda27"></div>
+      <div class="celda28"></div>
+      <div class="celda29"></div>
+      <div class="celda30"></div>
+      <div class="celda31"></div>
+      <div class="celda32"></div>
+      <div class="celda33"></div>
+      <div class="celda34"></div>
+      <div class="celda35"></div>
+      <div class="celda36"></div>
+      <div class="celda37"></div>
+      <div class="celda38"></div>
+      <div class="celda39"></div>
+      <div class="celda40"></div>
+      <div class="celda41"></div>
+      <div class="celda42"></div>
+      <div class="celda43"></div>
+      <div class="celda44"></div>
+      <div class="celda45"></div>
+      <div class="celda46"></div>
+      <div class="celda47"></div>
+      <div class="celda48"></div>
+      <div class="celda49"></div>
+      <div class="celda50"></div>
+      <div class="celda51"></div>
+      <div class="celda52"></div>
+      <div class="celda53"></div>
+      <div class="celda54"></div>
+      <div class="celda55"></div>
+      <div class="celda56"></div>
+      <div class="celda57"></div>
+      <div class="celda58"></div>
+      <div class="celda59"></div>
+      <div class="celda60"></div>
+      <div class="celda61"></div>
+      <div class="celda62"></div>
+      <div class="celda63"></div>
+      <div class="celda64"></div>
+    </div>
+  </body>
+</html>
