@@ -31,16 +31,22 @@
       @media only screen and (max-width: 600px)
       {
         .contenedor{
-    display: none;
+    display: block;
+    
  
+      }
+
+      .c{
+        
+        visibility: hidden;
       }
       .celda0{
         display: block;
         cursor: pointer;
       }
     
-      .celda0:hover .contenedor{
-        display: block;
+      .celda0:hover .c{
+        visibility: visible;
       }
       .celda0:hover{
         background-color: antiquewhite;
@@ -55,10 +61,10 @@
       Menú de Navegación Responsivo: Crea un menú de navegación que se transforme en un menú
      desplegable cuando el ancho de la pantalla sea menor a 600px. </p>
 
-     <div class="celda0">
-       <h5>Opciones</h5>
-     </div>
-    <div class="contenedor">
+     <div class="contenedor">
+      <div class="celda0">
+        <h5>Opciones</h5>
+      </div>
 
 
       <div class="c celda1">
