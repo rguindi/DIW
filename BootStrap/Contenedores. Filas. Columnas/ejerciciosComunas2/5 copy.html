@@ -14,28 +14,88 @@
   </head>
   <body>
     <h1>
-      Crea un formulario de contacto en dos columnas. En la primera columna, coloca campos como nombre, correo electrónico y asunto. En la segunda columna, agrega un área de texto para el mensaje y un botón de envío. 
+      Crea un formulario de contacto en dos columnas. En la primera columna,
+      coloca campos como nombre, correo electrónico y asunto. En la segunda
+      columna, agrega un área de texto para el mensaje y un botón de envío.
       Alinea los campos y el botón de manera estéticamente agradable.
     </h1>
 
-<div class="container">
-  <div class="row gx-5">
-      <div class="col">
-          <div class="  bg-primary">
-            <h3>Este va a ser mi formulario</h3>
-            <label for="user">Usuario</label>
-            <input type="text" class="form-control" id="user" name="user">
-            <label for="user">Usuario</label>
-            <input type="text" class="form-control" id="user" name="user">
-            <button class="btn btn-danger " type="submit">Enviar</button>
+    <div class="container mt-5">
+      <div class="row gx-5">
+        <div class="col-6">
+          <div class="card bg-white">
+            <div class="row mt-3 me-2">
+              <div class="col-6">
+                <img
+                  class="img-fluid"
+                  src="https://cdn.dribbble.com/users/1889528/screenshots/7239609/0aba6579301149.5cbf290c5a8dd.jpg"
+                  alt=""
+                />
+              </div>
+              <h5 class="col-6 text-center m-auto">Log in</h5>
+            </div>
+
+            <div class="mx-2 my-3">
+              <label for="user">Usuario</label>
+              <input type="text" class="form-control" id="user" name="user" />
+            </div>
+
+            <div class="mx-2 my-3">
+              <label for="user">Contraseña</label>
+              <input type="text" class="form-control" id="user" name="user" />
+
+              <div class="row mx-2 my-3">
+                <div class="col-6">
+                  <label for="opcion1">Recordar contraseña</label
+                  ><input class="ms-3" id="opcion1" type="checkbox" />
+                </div>
+                <div class="col-6">
+                  <p class="link-primary">Olvide mi contraseña</p>
+                </div>
+              </div>
+            </div>
+
+            <button class="btn btn-danger mx-2 mb-3" type="submit">
+              Enviar
+            </button>
           </div>
-      </div>
-      <div class="col">
-          <div class="bg-info">Custom column padding</div>
-      </div>
-  </div>
-</div>
+        </div>
+        <div class="col-6">
+          <div class="card bg-white">
+            <div class="row mt-3 me-2">
+              <div class="col-6">
+                <img
+                  class="img-fluid"
+                  src="https://cdn.dribbble.com/users/1889528/screenshots/7239609/0aba6579301149.5cbf290c5a8dd.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="col-6 align-self-center ">
+                <h5 class= "text-center ">Registro</h5>
+              </div>
+            </div>
+            <div class="mx-2 my-3">
+              <label for="user">Email</label>
+              <input type="text" class="form-control" id="user" name="user" />
+            </div>
 
+            <div class="mx-2 my-3">
+              <label for="user">Contraseña</label>
+              <input type="text" class="form-control" id="user" name="user" />
+            </div>
 
+            <div class="mx-2 my-3">
+              <label for="user">Repetir contraseña</label>
+              <input type="text" class="form-control" id="user" name="user" />
+            </div> 
+            <div class="row mx-2 my-3">
+              <label class="col-6" for=""><input type="radio">Hombre</label>
+              <label class="col-6" for=""><input type="radio">Mujer</label>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
