@@ -9,7 +9,11 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css"
+    />
+
     <title>Document</title>
   </head>
   <style>
@@ -17,36 +21,116 @@
       background-color: #171d25;
     }
     img {
-      width: 180px;
+      width: 190px;
+      padding: 0px;
+    }
+    #fila1 {
+      margin-left: 85px;
+      
+    }
+  #fila1{
+
+    margin-left: 0px;
+  }
+  
+  .container{
+    margin-left: 10px;
+  }
+    .nav-link {
+      font-size: 18px;
+      color: aliceblue;
+    }
+    .active {
+      text-decoration: underline;
+      color: #1a9fff;
+    }
+    .btn-success {
+      background-color: #5c7e10;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: small;
+      border: none;
+      border-radius: 0%;
+      padding-top: 0px;
+      padding-bottom: 0px;
+    }
+
+    .nav-item {
+      color: azure;
+      font-size: small;
+      min-width: max-content;
+    }
+    .nav-item:hover .sublista{
+      display: block;
+    }
+    .sublista{
+      display: none;
+      position: absolute;
+      list-style: none;
+      margin: 0px;
+      padding: 0px;
+      background-color: rgb(104, 103, 103);
+      
+    }
+
+    li{
+      margin-bottom: 5px;
+      padding: 8px;
+      font-weight: lighter;
+    }
+    li:hover{
+      background-color: lightgray;
+      color: black;
     }
   </style>
   <body>
     <header>
-      <div class="container">
-        <div class="row">
-          <div class="col-8">
-            <div class="navbar ">
+      <div class="container-lg ">
+        <div id="fila1" class="row">
+          <div class="col-8 p-4 ">
+            <div class="navbar flex-nowrap  ">
               <img
-                class="navbar-brand pt-4 pb-4"
+                class="navbar-brand"
                 src="https://store.akamai.steamstatic.com/public/shared/images/header/logo_steam.svg?t=962016"
                 alt=""
               />
-              <div class="nav- fw-bold">
-                <a class="nav-link p-1  " href="">TIENDA</a>
+              <div class="nav-item fw-bold">
+                <a class="nav-link p-1 active" href="">TIENDA</a>
+                <ul class="sublista">
+                  <li>Inicio</li>
+                  <li>Lista de descubrimientos</li>
+                  <li>Lista de deseados</li>
+                  <li>Tienda de puntos</li>
+                  <li>Noticias</li>
+                  <li>Estadisticas</li>
+                </ul>
               </div>
-              <div class="nav- fw-bold">
-                <a class="nav-link  p-1 " href="">COMUNIDAD</a>
+              <div class="nav-item fw-bold">
+                <a class="nav-link p-1" href="">COMUNIDAD</a>
+                <ul class="sublista">
+                  <li>Inicio</li>
+                  <li>Discusiones</li>
+                  <li>Workshop</li>
+                  <li>Mercado</li>
+                  <li>Retransmisiones</li>
+                </ul>
               </div>
-              <div class="nav- fw-bold ">
+              <div class="nav-item fw-bold">
                 <a class="nav-link p-1" href="">ACERCA DE</a>
               </div>
-              <div class="nav- fw-bold">
+              <div class="nav-item fw-bold">
                 <a class="nav-link p-1" href="">SOPORTE</a>
               </div>
             </div>
           </div>
-          <div class="col-4">
-            <div class="btn  "> Instalar Steam</div>
+          
+          <div class="col-4 align-items-center  ">
+            <div class="row">
+              <div class="btn btn-success nav-item col-5">
+                <i class="bi bi-box-arrow-down nav-item"></i> Instalar Steam
+              </div>
+              <div class="nav-item col-4 border-end">Iniciar sesión</div>
+              <div class="nav-item col-3">Idioma</div>
+            </div>
           </div>
         </div>
       </div>
