@@ -30,6 +30,11 @@
     #fila1 {
       margin-left: 0px;
     }
+    .barra {
+      margin-top: -22%;
+      right: 25%;
+      z-index: 1;
+    }
 
     .container {
       margin-left: 10px;
@@ -101,7 +106,7 @@
     }
   </style>
   <body>
-    <header class="position-relative">
+    <header >
       <div class="container-lg">
         <div id="fila1" class="row">
           <div class="col-8 p-4">
@@ -157,11 +162,11 @@
 
     <main>
       <div class="position-relative justify-content-center">
-        <video loop autoplay class="w-100 position-absolute">
+        <video loop autoplay class="w-100 ">
           <source src="./video.webm" type="video/webm" />
         </video>
 
-        <div class="container-lg col-8">
+        <div class="container-lg col-8 position-absolute barra">
           <nav
             class="navbar navbar-expand-lg bg-body-tertiary bg-primary p-0 m-4 mt-0 border border-2 border-black"
           >
