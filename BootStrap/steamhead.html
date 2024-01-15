@@ -148,13 +148,33 @@
             padding:0px;
             color:#a4b3c4
         }
-        .degradado {
-            background: linear-gradient(to right, #47bfff 5%, #1a44c2 60%);
-            width: 100px;
-            height: 100px;
-            position: absolute;
+        .degradado1 {
+          background: linear-gradient(rgba(0,0,0,0), rgb(139,0,0) 100%);
+            width: 100%;
+            height: 100%;
+            color: white
+            
+        }
+        .degradado2 {
+          background: linear-gradient(rgba(0,0,0,0), rgb(0,0,139) 100%);
+            width: 100%;
+            height: 100%;
             z-index: 999;
-            opacity: 0.5;
+            color: white
+        }
+        .degradado3 {
+          background: linear-gradient(rgba(0,0,0,0), rgb(184,134,11) 100%);
+          width: 100%;
+            height: 100%;
+            z-index: 999;
+            color: white
+        }
+        .degradado4 {
+          background: linear-gradient(rgba(0,0,0,0), rgb(0,100,0) 100%);
+          width: 100%;
+            height: 100%;
+            z-index: 999;
+            color: white
         }
   </style>
   <body>
@@ -296,6 +316,7 @@
         </div>
         </div>
         <div class="col-10">
+
           <div id="carouselExampleIndicators" class="carousel slide">
             <div class="carousel-indicators">
               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -303,19 +324,68 @@
               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
             </div>
             <div class="carousel-inner">
-              <div class="carousel-item active d-flex position-relative ">
-                <img src="./vertical.avif" class="d-block border  " alt="...">
-                <span id="degradado w-25"></span>
-                <img src="./vertical.avif" class="d-block w-25  border" alt="...">
-                <img src="./vertical.avif" class="d-block w-25   border" alt="...">
-                <img src="./vertical.avif" class="d-block w-25  border" alt="...">
+
+              <!-- ITEM1 -->
+              <div class="carousel-item active d-flex ">
+                <div class="position-relative w-25  d-flex  position-relative">
+                  <img src="./1.png"  class="w-100  border" alt="...">
+                  <div class="position-absolute degradado1 d-flex align-items-end ">
+                    <h5 class="text-center ">Ciudades y asentamientos</h5>
+                  </div>
+                 
+                </div>
+
+                <div class="position-relative w-25  d-flex  position-relative">
+                  <img src="./2.png"  class="w-100  border" alt="...">
+                  <div class="position-absolute degradado2  d-flex align-items-end justify-content-center ">
+                    <h5>Carreras</h5>
+                  </div>
+                </div>
+                <div class="position-relative w-25  d-flex  position-relative">
+                  <img src="./1.png"  class="w-100  border" alt="...">
+                  <div class="position-absolute degradado3  d-flex align-items-end justify-content-center">
+                    <h5>Simulacion</h5>
+                  </div>
+                </div>
+                <div class="position-relative w-25  d-flex  position-relative">
+                  <img src="./2.png"  class="w-100  border" alt="...">
+                  <div class="position-absolute degradado4  d-flex align-items-end justify-content-center">
+                    <h5>Simulacion</h5>
+                  </div>
+                </div>
               </div>
-              <div class="carousel-item">
-                <img src="./GTA.jpg" class="d-block w-100 " alt="...">
+
+                     <!-- ITEM2 -->
+              <div class="carousel-item d-flex ">
+                <div class="position-relative w-25  d-flex  position-relative">
+                  <img src="./1.png"  class="w-100  border" alt="...">
+                  <div class="position-absolute degradado1 d-flex align-items-end ">
+                    <h5 class="text-center ">Ciudades y asentamientos</h5>
+                  </div>
+                 
+                </div>
+
+                <div class="position-relative w-25  d-flex  position-relative">
+                  <img src="./2.png"  class="w-100  border" alt="...">
+                  <div class="position-absolute degradado2  d-flex align-items-end justify-content-center ">
+                    <h5>Carreras</h5>
+                  </div>
+                </div>
+                <div class="position-relative w-25  d-flex  position-relative">
+                  <img src="./1.png"  class="w-100  border" alt="...">
+                  <div class="position-absolute degradado3  d-flex align-items-end justify-content-center">
+                    <h5>Simulacion</h5>
+                  </div>
+                </div>
+                <div class="position-relative w-25  d-flex  position-relative">
+                  <img src="./2.png"  class="w-100  border" alt="...">
+                  <div class="position-absolute degradado4  d-flex align-items-end justify-content-center">
+                    <h5>Simulacion</h5>
+                  </div>
+                </div>
               </div>
-              <div class="carousel-item">
-                <img src="./GTA.jpg" class="d-block w-100 " alt="...">
-              </div>
+
+
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
