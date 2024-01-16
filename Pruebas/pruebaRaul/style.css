@@ -1,0 +1,18 @@
+.nav-pequeño{
+    min-width: max-content
+}
+.nav-grande li{
+    transition: 0.4s;
+}
+.nav-grande li:hover{
+    background-color: #05857a;
+}
+.nav-grande .nav-link{
+    color: #4d4d4d;
+}
+.active{
+    background-color: #05857a;
+}
+.boton-principal{
+    background-color: #05857a;
+}
