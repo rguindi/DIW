@@ -1,0 +1,23 @@
+$color-link: green;
+$colores: red, green, blue, yellow; // Valores separados con comas
+$colores2: orange black white purple;
+
+
+$lista-compuesta: join($colores, $colores2);
+$lista-compuesta: append( $lista-compuesta,  gray, slash ); // $separator: Must be "space", "comma", "slash", or "auto".
+
+
+$primer-color: nth($colores, 1); // red
+$segundo-color: nth($colores, 2); // green
+
+$longitud: length($colores);
+
+
+body{
+    background-color: $primer-color;
+    background-color: length($colores);
+    background-color: index($colores, red);
+    background-color: length($lista-compuesta);
+    
+}
+
