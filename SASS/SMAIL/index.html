@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/cambiotema.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>1</header>
+    <main>1
+        <button onclick="cambiarficher()">boton</button>
+    </main>
+    <footer>1</footer>
+    <script>
+        function cambiarficher() {
+            const link = document.head.querySelector('link');
+            console.log(link.href);
+            if (link.href == 'http://192.168.56.2:5500/SASS/Proyecto_1/css/cambiotema1.css') {
+                link.href = 'http://192.168.56.2:5500/SASS/Proyecto_1/css/cambiotema.css';
+            } else
+                link.href = 'http://192.168.56.2:5500/SASS/Proyecto_1/css/cambiotema1.css';
+        }
+        function crearCart() {
+            let caja = document.createElement('div');
+            caja.style.display = 'flex';
+            caja.style.justifyContent = 'center';
+            document.body.querySelector('main').style.height = '250px';
+            document.body.querySelector('main').appendChild(caja);
+            for (let i = 1; i < 7; i++) {
+                let cajetin = document.createElement('div');
+                cajetin.id = 'ele' + i.toString();
+                cajetin.style.width = '100px';
+                cajetin.style.height = '100px';
+                cajetin.style.margin = '10px';
+                cajetin.style.backgroundColor = 'red';
+                caja.appendChild(cajetin);
+
+            }
+
+        }
+        crearCart();
+    </script>
+</body>
+
+</html>

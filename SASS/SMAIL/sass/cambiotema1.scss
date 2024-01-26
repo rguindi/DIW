@@ -1,0 +1,31 @@
+$mapaColores: (
+    header: purple,
+    main: orange,
+    footer: purple,
+    button: orange,
+    link: orange
+);
+
+@each $key, $value in $mapaColores {
+    #{ $key } {
+        background-color: #{ $value };
+        width: 100%;
+        height: 50px;
+    }
+}
+
+$mapaDegradado: (
+    ele1: linear-gradient(to bottom, #ff0000, #00ff00, #0000ff),
+    ele2: linear-gradient(to bottom, #523131, #4e814e, #59a2ae),
+    ele3: linear-gradient(to bottom, #996666, #622749, #bbbbcc),
+    ele4: linear-gradient(to bottom, #bace39, #000000, #ffffff),
+    ele5: linear-gradient(to bottom, #cfcaca, #1e3c1e, #b10000),
+    ele6: linear-gradient(to bottom, #a8ca53, #00ff00, #3ac0c5),
+);
+
+@each $key, $value in $mapaDegradado {
+    ##{ $key } {
+        background: #{ $value };
+
+    }
+}

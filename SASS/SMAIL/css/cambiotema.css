@@ -1,0 +1,55 @@
+header {
+  background-color: black;
+  width: 100%;
+  height: 50px;
+}
+
+main {
+  background-color: gray;
+  width: 100%;
+  height: 50px;
+}
+
+footer {
+  background-color: black;
+  width: 100%;
+  height: 50px;
+}
+
+button {
+  background-color: green;
+  width: 100%;
+  height: 50px;
+}
+
+link {
+  background-color: purple;
+  width: 100%;
+  height: 50px;
+}
+
+#ele1 {
+  background: linear-gradient(to bottom, #ff0000, #00ff00, #0000ff);
+}
+
+#ele2 {
+  background: linear-gradient(to bottom, #523131, #4e814e, #59a2ae);
+}
+
+#ele3 {
+  background: linear-gradient(to bottom, #996666, #622749, #bbbbcc);
+}
+
+#ele4 {
+  background: linear-gradient(to bottom, #bace39, #000000, #ffffff);
+}
+
+#ele5 {
+  background: linear-gradient(to bottom, #cfcaca, #1e3c1e, #b10000);
+}
+
+#ele6 {
+  background: linear-gradient(to bottom, #a8ca53, #00ff00, #3ac0c5);
+}
+
+/*# sourceMappingURL=cambiotema.css.map */
