@@ -17,9 +17,9 @@
     <title>Document</title>
   </head>
   <body>
-    <h1>Temperatura en Zamora</h1>
+    <h1 class="text-center mt-3 ">Temperatura en Zamora</h1>
 
-    <div class="container-sm mt-5">
+    <div class="container-sm mt-5 bg-light border border-black shadow rounded ">
       <nav class="nav nav-tabs " id="nav-tab" role="tablist">
         <a
           class="nav-link active"
@@ -82,25 +82,38 @@
           aria-labelledby="nav-dia1-tab"
         >
         <div class=" d-flex flex-column justify-content-center mt-3 ">
-          <div>
-            <span id="ubicacion" class="fw-bold ">Ubicacion: </span><span id="ubicacion1">Zamora</span>
-            <span id="fecha" class="fw-bold">Fecha: </span><span id="fecha1">Zamora</span>
+          <div class="d-flex justify-content-evenly ">
+            <div>
+              <div class="border p-2 m-2 bg-secondary text-white rounded ">
+                <span id="ubicacion" class="fw-bold">Ubicacion: </span><span id="ubicacion1">Zamora</span><br>
+              </div>
+              <div class="border p-2 m-2 bg-secondary text-white rounded ">
+                <span id="fecha" class="fw-bold">Fecha: </span><span id="fecha1">Zamora</span>
+              </div>
+            </div>
+            <div>
+              <div class="border p-2 m-2 bg-secondary text-white rounded ">
+                <span id="temperatura" class="fw-bold">Temperatura: </span><span id="temperatura1">Zamora</span><br>
+              </div>
+              <div class="border p-2 m-2 bg-secondary text-white rounded ">
+                <span id="unidad" class="fw-bold">Unidad: </span><span id="unidad1">Zamora</span>
+              </div>
+
+            </div>
           </div>
           <div>
-            <span id="temperatura" class="fw-bold">Temperatura: </span><span id="temperatura1">Zamora</span>
-            <span id="unidad" class="fw-bold">Unidad: </span><span id="unidad1">Zamora</span>
           </div>
 
         </div>
 
 
           <!-- Accordion -->
-          <div class="d-flex justify-content-center  mt-4 ">
+          <div class="d-flex justify-content-center  mt-4  mb-4">
             <div class="accordion w-75 " id="accordionExample">
-              <div class="accordion-item">
-                <h2 class="accordion-header">
+              <div class="accordion-item ">
+                <h2 class="accordion-header ">
                   <button
-                    class="accordion-button"
+                    class="accordion-button  "
                     type="button"
                     data-bs-toggle="collapse"
                     data-bs-target="#collapseOne"
@@ -112,10 +125,10 @@
                 </h2>
                 <div
                   id="collapseOne"
-                  class="accordion-collapse collapse show"
+                  class="accordion-collapse collapse show "
                   data-bs-parent="#accordionExample"
                 >
-                  <div class="accordion-body">
+                  <div class="accordion-body  ">
                     <strong>This is the first item's accordion body.</strong> It
                     is shown by default, until the collapse plugin adds the
                     appropriate classes that we use to style each element. These
@@ -146,7 +159,7 @@
                   class="accordion-collapse collapse"
                   data-bs-parent="#accordionExample"
                 >
-                  <div class="accordion-body">
+                  <div class="accordion-body  ">
                     <strong>This is the second item's accordion body.</strong>
                     It is hidden by default, until the collapse plugin adds the
                     appropriate classes that we use to style each element. These

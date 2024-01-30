@@ -19,3 +19,5 @@ fetch(url)
     // Manejar errores de red o del servidor
     console.error('Error:', error);
   });
+
+  
