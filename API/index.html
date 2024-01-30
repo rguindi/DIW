@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Temperatura en Zamora</h1>
+
+    <div class="container-sm mt-5">
+      <nav class="nav nav-tabs " id="nav-tab" role="tablist">
+        <a
+          class="nav-link active"
+          id="nav-dia1-tab"
+          data-bs-toggle="tab"
+          href="#nav-dia1"
+          role="tab"
+          aria-controls="nav-dia1"
+          aria-selected="true"
+          >Dia 1</a
+        >
+        <a
+          class="nav-link"
+          id="nav-dia2-tab"
+          data-bs-toggle="tab"
+          href="#nav-dia2"
+          role="tab"
+          aria-controls="nav-dia2"
+          aria-selected="false"
+          >Dia 2</a
+        >
+        <a
+          class="nav-link"
+          id="nav-dia3-tab"
+          data-bs-toggle="tab"
+          href="#nav-dia3"
+          role="tab"
+          aria-controls="nav-dia3"
+          aria-selected="false"
+          >Dia 3</a
+        >
+        <a
+          class="nav-link"
+          id="nav-dia4-tab"
+          data-bs-toggle="tab"
+          href="#nav-dia4"
+          role="tab"
+          aria-controls="nav-dia4"
+          aria-selected="false"
+          >Dia 4</a
+        >
+        <a
+          class="nav-link"
+          id="nav-dia5-tab"
+          data-bs-toggle="tab"
+          href="#nav-dia5"
+          role="tab"
+          aria-controls="nav-dia5"
+          aria-selected="false"
+          >Dia 5</a
+        >
+      </nav>
+
+      <div class="tab-content" id="nav-tabContent">
+        <!-- DIA 1 -->
+        <div
+          class="tab-pane fade show active"
+          id="nav-dia1"
+          role="tabpanel"
+          aria-labelledby="nav-dia1-tab"
+        >
+        <div class=" d-flex flex-column justify-content-center mt-3 ">
+          <div>
+            <span id="ubicacion" class="fw-bold ">Ubicacion: </span><span id="ubicacion1">Zamora</span>
+            <span id="fecha" class="fw-bold">Fecha: </span><span id="fecha1">Zamora</span>
+          </div>
+          <div>
+            <span id="temperatura" class="fw-bold">Temperatura: </span><span id="temperatura1">Zamora</span>
+            <span id="unidad" class="fw-bold">Unidad: </span><span id="unidad1">Zamora</span>
+          </div>
+
+        </div>
+
+
+          <!-- Accordion -->
+          <div class="d-flex justify-content-center  mt-4 ">
+            <div class="accordion w-75 " id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne"
+                    aria-expanded="true"
+                    aria-controls="collapseOne"
+                  >
+                    <b>DAY</b>
+                  </button>
+                </h2>
+                <div
+                  id="collapseOne"
+                  class="accordion-collapse collapse show"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <strong>This is the first item's accordion body.</strong> It
+                    is shown by default, until the collapse plugin adds the
+                    appropriate classes that we use to style each element. These
+                    classes control the overall appearance, as well as the
+                    showing and hiding via CSS transitions. You can modify any
+                    of this with custom CSS or overriding our default variables.
+                    It's also worth noting that just about any HTML can go
+                    within the <code>.accordion-body</code>, though the
+                    transition does limit overflow.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item mb-2">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="collapseTwo"
+                  >
+                    <b>NIGTH</b>
+                  </button>
+                </h2>
+                <div
+                  id="collapseTwo"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <strong>This is the second item's accordion body.</strong>
+                    It is hidden by default, until the collapse plugin adds the
+                    appropriate classes that we use to style each element. These
+                    classes control the overall appearance, as well as the
+                    showing and hiding via CSS transitions. You can modify any
+                    of this with custom CSS or overriding our default variables.
+                    It's also worth noting that just about any HTML can go
+                    within the <code>.accordion-body</code>, though the
+                    transition does limit overflow.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="tab-pane fade"
+          id="nav-dia2"
+          role="tabpanel"
+          aria-labelledby="nav-dia2-tab"
+        >
+          Lorem ipsum do veritatis.
+        </div>
+        <div
+          class="tab-pane fade"
+          id="nav-dia3"
+          role="tabpanel"
+          aria-labelledby="nav-dia3-tab"
+        >
+          Lorem ipsum do veritatis.
+        </div>
+        <div
+          class="tab-pane fade"
+          id="nav-dia4"
+          role="tabpanel"
+          aria-labelledby="nav-dia4-tab"
+        >
+          Lorem ipsum do veritatis.
+        </div>
+        <div
+          class="tab-pane fade"
+          id="nav-dia5"
+          role="tabpanel"
+          aria-labelledby="nav-dia5-tab"
+        >
+          Lorem ipsum do veritatis.
+        </div>
+      </div>
+    </div>
+
+    <script src="./peitcion.js"></script>
+  </body>
+</html>
