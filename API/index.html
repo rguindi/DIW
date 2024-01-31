@@ -15,6 +15,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <style>
+      img {
+        width: 100px;
+        height: 100px;
+      }
+    </style>
   </head>
   <body>
     <h1 class="text-center mt-3 ">Temperatura en Zamora</h1>
@@ -84,6 +90,9 @@
         <div class=" d-flex flex-column justify-content-center mt-3 ">
           <div class="d-flex justify-content-evenly ">
             <div>
+              <img src="./sol.png" alt="">
+            </div>
+            <div>
               <div class="border p-2 m-2 bg-secondary text-white rounded ">
                 <span id="ubicacion" class="fw-bold">Ubicacion: </span><span id="ubicacion1">Zamora</span><br>
               </div>
@@ -92,8 +101,11 @@
               </div>
             </div>
             <div>
+              <img src="./nubes.png" alt="" >
+            </div>
+            <div>
               <div class="border p-2 m-2 bg-secondary text-white rounded ">
-                <span id="temperatura" class="fw-bold">Temperatura: </span><span id="temperatura1">Zamora</span><br>
+                <span id="temperatura" class="fw-bold">Temperatura Max: </span><span id="temperatura1">Zamora</span><br>
               </div>
               <div class="border p-2 m-2 bg-secondary text-white rounded ">
                 <span id="unidad" class="fw-bold">Unidad: </span><span id="unidad1">Zamora</span>
@@ -128,16 +140,8 @@
                   class="accordion-collapse collapse show "
                   data-bs-parent="#accordionExample"
                 >
-                  <div class="accordion-body  ">
-                    <strong>This is the first item's accordion body.</strong> It
-                    is shown by default, until the collapse plugin adds the
-                    appropriate classes that we use to style each element. These
-                    classes control the overall appearance, as well as the
-                    showing and hiding via CSS transitions. You can modify any
-                    of this with custom CSS or overriding our default variables.
-                    It's also worth noting that just about any HTML can go
-                    within the <code>.accordion-body</code>, though the
-                    transition does limit overflow.
+                  <div id="day1" class="accordion-body  " >
+                    
                   </div>
                 </div>
               </div>
@@ -159,16 +163,8 @@
                   class="accordion-collapse collapse"
                   data-bs-parent="#accordionExample"
                 >
-                  <div class="accordion-body  ">
-                    <strong>This is the second item's accordion body.</strong>
-                    It is hidden by default, until the collapse plugin adds the
-                    appropriate classes that we use to style each element. These
-                    classes control the overall appearance, as well as the
-                    showing and hiding via CSS transitions. You can modify any
-                    of this with custom CSS or overriding our default variables.
-                    It's also worth noting that just about any HTML can go
-                    within the <code>.accordion-body</code>, though the
-                    transition does limit overflow.
+                  <div id="nigth1" class="accordion-body  ">
+                   
                   </div>
                 </div>
               </div>
@@ -176,21 +172,206 @@
           </div>
         </div>
 
+
+
         <div
           class="tab-pane fade"
           id="nav-dia2"
           role="tabpanel"
           aria-labelledby="nav-dia2-tab"
         >
-          Lorem ipsum do veritatis.
+          <!-- DIA 2 -->
+        <div
+          class="tab-pane fade show active"
+          id="nav-dia1"
+          role="tabpanel"
+          aria-labelledby="nav-dia1-tab"
+        >
+        <div class=" d-flex flex-column justify-content-center mt-3 ">
+          <div class="d-flex justify-content-evenly ">
+            <div>
+              <img src="./sol.png" alt="">
+            </div>
+            <div>
+              <div class="border p-2 m-2 bg-secondary text-white rounded ">
+                <span id="ubicacion" class="fw-bold">Ubicacion: </span><span id="ubicacion2">Zamora</span><br>
+              </div>
+              <div class="border p-2 m-2 bg-secondary text-white rounded ">
+                <span id="fecha" class="fw-bold">Fecha: </span><span id="fecha2">Zamora</span>
+              </div>
+            </div>
+            <div>
+              <img src="./nubes.png" alt="" >
+            </div>
+            <div>
+              <div class="border p-2 m-2 bg-secondary text-white rounded ">
+                <span id="temperatura" class="fw-bold">Temperatura Max: </span><span id="temperatura2">Zamora</span><br>
+              </div>
+              <div class="border p-2 m-2 bg-secondary text-white rounded ">
+                <span id="unidad" class="fw-bold">Unidad: </span><span id="unidad2">Zamora</span>
+              </div>
+
+            </div>
+          </div>
+          <div>
+          </div>
+
         </div>
+
+
+          <!-- Accordion -->
+          <div class="d-flex justify-content-center  mt-4  mb-4">
+            <div class="accordion w-75 " id="accordionExample">
+              <div class="accordion-item ">
+                <h2 class="accordion-header ">
+                  <button
+                    class="accordion-button  "
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne"
+                    aria-expanded="true"
+                    aria-controls="collapseOne"
+                  >
+                    <b>DAY</b>
+                  </button>
+                </h2>
+                <div
+                  id="collapseOne"
+                  class="accordion-collapse collapse show "
+                  data-bs-parent="#accordionExample"
+                >
+                  <div id="day2" class="accordion-body  " >
+                    
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item mb-2">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="collapseTwo"
+                  >
+                    <b>NIGTH</b>
+                  </button>
+                </h2>
+                <div
+                  id="collapseTwo"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div id="nigth2" class="accordion-body  ">
+                   
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+
+
+
         <div
           class="tab-pane fade"
           id="nav-dia3"
           role="tabpanel"
           aria-labelledby="nav-dia3-tab"
         >
-          Lorem ipsum do veritatis.
+          <!-- DIA 3 -->
+        <div
+        class="tab-pane fade show active"
+        id="nav-dia1"
+        role="tabpanel"
+        aria-labelledby="nav-dia1-tab"
+      >
+      <div class=" d-flex flex-column justify-content-center mt-3 ">
+        <div class="d-flex justify-content-evenly ">
+          <div>
+            <img src="./sol.png" alt="">
+          </div>
+          <div>
+            <div class="border p-2 m-2 bg-secondary text-white rounded ">
+              <span id="ubicacion" class="fw-bold">Ubicacion: </span><span id="ubicacion3">Zamora</span><br>
+            </div>
+            <div class="border p-2 m-2 bg-secondary text-white rounded ">
+              <span id="fecha" class="fw-bold">Fecha: </span><span id="fecha3">Zamora</span>
+            </div>
+          </div>
+          <div>
+            <img src="./nubes.png" alt="" >
+          </div>
+          <div>
+            <div class="border p-2 m-2 bg-secondary text-white rounded ">
+              <span id="temperatura" class="fw-bold">Temperatura Max: </span><span id="temperatura3">Zamora</span><br>
+            </div>
+            <div class="border p-2 m-2 bg-secondary text-white rounded ">
+              <span id="unidad" class="fw-bold">Unidad: </span><span id="unidad3">Zamora</span>
+            </div>
+
+          </div>
+        </div>
+        <div>
+        </div>
+
+      </div>
+
+
+        <!-- Accordion -->
+        <div class="d-flex justify-content-center  mt-4  mb-4">
+          <div class="accordion w-75 " id="accordionExample">
+            <div class="accordion-item ">
+              <h2 class="accordion-header ">
+                <button
+                  class="accordion-button  "
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne"
+                  aria-expanded="true"
+                  aria-controls="collapseOne"
+                >
+                  <b>DAY</b>
+                </button>
+              </h2>
+              <div
+                id="collapseOne"
+                class="accordion-collapse collapse show "
+                data-bs-parent="#accordionExample"
+              >
+                <div id="day3" class="accordion-body  " >
+                  
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item mb-2">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="collapseTwo"
+                >
+                  <b>NIGTH</b>
+                </button>
+              </h2>
+              <div
+                id="collapseTwo"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionExample"
+              >
+                <div id="nigth3" class="accordion-body  ">
+                 
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
         </div>
         <div
           class="tab-pane fade"
@@ -198,7 +379,97 @@
           role="tabpanel"
           aria-labelledby="nav-dia4-tab"
         >
-          Lorem ipsum do veritatis.
+          <!-- DIA 4 -->
+        <div
+        class="tab-pane fade show active"
+        id="nav-dia1"
+        role="tabpanel"
+        aria-labelledby="nav-dia1-tab"
+      >
+      <div class=" d-flex flex-column justify-content-center mt-3 ">
+        <div class="d-flex justify-content-evenly ">
+          <div>
+            <img src="./sol.png" alt="">
+          </div>
+          <div>
+            <div class="border p-2 m-2 bg-secondary text-white rounded ">
+              <span id="ubicacion" class="fw-bold">Ubicacion: </span><span id="ubicacion4">Zamora</span><br>
+            </div>
+            <div class="border p-2 m-2 bg-secondary text-white rounded ">
+              <span id="fecha" class="fw-bold">Fecha: </span><span id="fecha4">Zamora</span>
+            </div>
+          </div>
+          <div>
+            <img src="./nubes.png" alt="" >
+          </div>
+          <div>
+            <div class="border p-2 m-2 bg-secondary text-white rounded ">
+              <span id="temperatura" class="fw-bold">Temperatura Max: </span><span id="temperatura4">Zamora</span><br>
+            </div>
+            <div class="border p-2 m-2 bg-secondary text-white rounded ">
+              <span id="unidad" class="fw-bold">Unidad: </span><span id="unidad4">Zamora</span>
+            </div>
+
+          </div>
+        </div>
+        <div>
+        </div>
+
+      </div>
+
+
+        <!-- Accordion -->
+        <div class="d-flex justify-content-center  mt-4  mb-4">
+          <div class="accordion w-75 " id="accordionExample">
+            <div class="accordion-item ">
+              <h2 class="accordion-header ">
+                <button
+                  class="accordion-button  "
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne"
+                  aria-expanded="true"
+                  aria-controls="collapseOne"
+                >
+                  <b>DAY</b>
+                </button>
+              </h2>
+              <div
+                id="collapseOne"
+                class="accordion-collapse collapse show "
+                data-bs-parent="#accordionExample"
+              >
+                <div id="day4" class="accordion-body  " >
+                  
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item mb-2">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="collapseTwo"
+                >
+                  <b>NIGTH</b>
+                </button>
+              </h2>
+              <div
+                id="collapseTwo"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionExample"
+              >
+                <div id="nigth4" class="accordion-body  ">
+                 
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
         </div>
         <div
           class="tab-pane fade"
@@ -206,7 +477,97 @@
           role="tabpanel"
           aria-labelledby="nav-dia5-tab"
         >
-          Lorem ipsum do veritatis.
+          <!-- DIA 5 -->
+        <div
+        class="tab-pane fade show active"
+        id="nav-dia1"
+        role="tabpanel"
+        aria-labelledby="nav-dia1-tab"
+      >
+      <div class=" d-flex flex-column justify-content-center mt-3 ">
+        <div class="d-flex justify-content-evenly ">
+          <div>
+            <img src="./sol.png" alt="">
+          </div>
+          <div>
+            <div class="border p-2 m-2 bg-secondary text-white rounded ">
+              <span id="ubicacion" class="fw-bold">Ubicacion: </span><span id="ubicacion5">Zamora</span><br>
+            </div>
+            <div class="border p-2 m-2 bg-secondary text-white rounded ">
+              <span id="fecha" class="fw-bold">Fecha: </span><span id="fecha5">Zamora</span>
+            </div>
+          </div>
+          <div>
+            <img src="./nubes.png" alt="" >
+          </div>
+          <div>
+            <div class="border p-2 m-2 bg-secondary text-white rounded ">
+              <span id="temperatura" class="fw-bold">Temperatura Max: </span><span id="temperatura5">Zamora</span><br>
+            </div>
+            <div class="border p-2 m-2 bg-secondary text-white rounded ">
+              <span id="unidad" class="fw-bold">Unidad: </span><span id="unidad5">Zamora</span>
+            </div>
+
+          </div>
+        </div>
+        <div>
+        </div>
+
+      </div>
+
+
+        <!-- Accordion -->
+        <div class="d-flex justify-content-center  mt-4  mb-4">
+          <div class="accordion w-75 " id="accordionExample">
+            <div class="accordion-item ">
+              <h2 class="accordion-header ">
+                <button
+                  class="accordion-button  "
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne"
+                  aria-expanded="true"
+                  aria-controls="collapseOne"
+                >
+                  <b>DAY</b>
+                </button>
+              </h2>
+              <div
+                id="collapseOne"
+                class="accordion-collapse collapse show "
+                data-bs-parent="#accordionExample"
+              >
+                <div id="day5" class="accordion-body  " >
+                  
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item mb-2">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="collapseTwo"
+                >
+                  <b>NIGTH</b>
+                </button>
+              </h2>
+              <div
+                id="collapseTwo"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionExample"
+              >
+                <div id="nigth5" class="accordion-body  ">
+                 
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
         </div>
       </div>
     </div>
