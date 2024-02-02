@@ -1,30 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css"
     />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Raul</title>
     <style>
-      img {
-        width: 100px;
-        height: 100px;
+    
+      .img-logo{
+        width: 40px;
+        height: 40px;
+      }
+      .img-noche{
+        width: 30px;
+        height: 30px;
       }
     </style>
   </head>
-  <body>
-    <h1 class="text-center mt-3 ">Temperatura en Zamora</h1>
+  <body class="bg-primary-subtle   ">
+   
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-primary rounded  " aria-label="Fifth navbar example">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="./logo.png" alt="" class="ms-4 me-3 img-logo"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample05" aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+  
+        <div class="collapse navbar-collapse" id="navbarsExample05">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Provincias</a>
+            </li>
+      
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Predicciones</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Lluvias</a></li>
+                <li><a class="dropdown-item" href="#">Nieve</a></li>
+                <li><a class="dropdown-item" href="#">Viento</a></li>
+              </ul>
+            </li>
+          </ul>
+          <form role="search">
+            <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+          </form>
+        </div>
+      </div>
+    </nav>
 
+
+<!-- --------------- -->
     <div class="container-sm mt-5 bg-light border border-black shadow rounded ">
       <nav class="nav nav-tabs " id="nav-tab" role="tablist">
         <a
@@ -90,25 +124,19 @@
         <div class=" d-flex flex-column justify-content-center mt-3 ">
           <div class="d-flex justify-content-evenly ">
             <div>
-              <img src="./sol.png" alt="">
-            </div>
-            <div>
-              <div class="border p-2 m-2 bg-secondary text-white rounded ">
-                <span id="ubicacion" class="fw-bold">Ubicacion: </span><span id="ubicacion1">Zamora</span><br>
+              <div class="border p-2 m-2 bg-primary   text-white rounded">
+                <span id="ubicacion" class="fw-bold"><img src="./ubicacion.png" alt="" class=" me-1 img-noche">Ubicacion: </span><span id="ubicacion1">Zamora</span><br>
               </div>
-              <div class="border p-2 m-2 bg-secondary text-white rounded ">
-                <span id="fecha" class="fw-bold">Fecha: </span><span id="fecha1">Zamora</span>
+              <div class="border p-2 m-2 bg-primary text-white rounded ">
+                <span id="fecha" class="fw-bold"><img src="./fecha.png" alt="" class="me-2 img-noche">Fecha: </span><span id="fecha1">Zamora</span>
               </div>
             </div>
             <div>
-              <img src="./nubes.png" alt="" >
-            </div>
-            <div>
-              <div class="border p-2 m-2 bg-secondary text-white rounded ">
-                <span id="temperatura" class="fw-bold">Temperatura Max: </span><span id="temperatura1">Zamora</span><br>
+              <div class="border p-2 m-2 bg-primary text-white rounded ">
+                <span id="temperatura" class="fw-bold"><img src="./termo.png" alt="" class="img-noche">Temperatura Max: </span><span id="temperatura1">Zamora</span><br>
               </div>
-              <div class="border p-2 m-2 bg-secondary text-white rounded ">
-                <span id="unidad" class="fw-bold">Unidad: </span><span id="unidad1">Zamora</span>
+              <div class="border p-2 m-2 bg-primary text-white rounded ">
+                <span id="unidad" class="fw-bold"><img src="./unidad.png" alt="" class="me-1 img-noche">Unidad: </span><span id="unidad1">Zamora</span>
               </div>
 
             </div>
@@ -132,12 +160,12 @@
                     aria-expanded="true"
                     aria-controls="collapseOne"
                   >
-                    <b>DAY</b>
+                    <b>DAY<img src="./sol.png" alt="" class="ms-4 img-logo"></b>
                   </button>
                 </h2>
                 <div
                   id="collapseOne"
-                  class="accordion-collapse collapse show "
+                  class="accordion-collapse collapse  "
                   data-bs-parent="#accordionExample"
                 >
                   <div id="day1" class="accordion-body  " >
@@ -152,10 +180,10 @@
                     type="button"
                     data-bs-toggle="collapse"
                     data-bs-target="#collapseTwo"
-                    aria-expanded="false"
+                    aria-expanded="true"
                     aria-controls="collapseTwo"
                   >
-                    <b>NIGTH</b>
+                    <b>NIGTH<img src="./noche.png" alt="" class="ms-4 img-noche"></b>
                   </button>
                 </h2>
                 <div
@@ -189,26 +217,22 @@
         >
         <div class=" d-flex flex-column justify-content-center mt-3 ">
           <div class="d-flex justify-content-evenly ">
+          
             <div>
-              <img src="./sol.png" alt="">
-            </div>
-            <div>
-              <div class="border p-2 m-2 bg-secondary text-white rounded ">
+              <div class="border p-2 m-2 bg-primary text-white rounded ">
                 <span id="ubicacion" class="fw-bold">Ubicacion: </span><span id="ubicacion2">Zamora</span><br>
               </div>
-              <div class="border p-2 m-2 bg-secondary text-white rounded ">
-                <span id="fecha" class="fw-bold">Fecha: </span><span id="fecha2">Zamora</span>
+              <div class="border p-2 m-2 bg-primary text-white rounded ">
+                <span id="fecha" class="fw-bold"><img src="./fecha.png" alt="" class="me-2 img-noche">Fecha: </span><span id="fecha2">Zamora</span>
               </div>
             </div>
+            
             <div>
-              <img src="./nubes.png" alt="" >
-            </div>
-            <div>
-              <div class="border p-2 m-2 bg-secondary text-white rounded ">
-                <span id="temperatura" class="fw-bold">Temperatura Max: </span><span id="temperatura2">Zamora</span><br>
+              <div class="border p-2 m-2 bg-primary text-white rounded ">
+                <span id="temperatura" class="fw-bold"><img src="./termo.png" alt="" class="img-noche">Temperatura Max: </span><span id="temperatura2">Zamora</span><br>
               </div>
-              <div class="border p-2 m-2 bg-secondary text-white rounded ">
-                <span id="unidad" class="fw-bold">Unidad: </span><span id="unidad2">Zamora</span>
+              <div class="border p-2 m-2 bg-primary text-white rounded ">
+                <span id="unidad" class="fw-bold"><img src="./unidad.png" alt="" class="me-1 img-noche">Unidad: </span><span id="unidad2">Zamora</span>
               </div>
 
             </div>
@@ -232,12 +256,12 @@
                     aria-expanded="true"
                     aria-controls="collapseOne"
                   >
-                    <b>DAY</b>
+                    <b>DAY<img src="./sol.png" alt="" class="ms-4 img-logo"></b>
                   </button>
                 </h2>
                 <div
                   id="collapseOne"
-                  class="accordion-collapse collapse show "
+                  class="accordion-collapse collapse  "
                   data-bs-parent="#accordionExample"
                 >
                   <div id="day2" class="accordion-body  " >
@@ -255,7 +279,7 @@
                     aria-expanded="false"
                     aria-controls="collapseTwo"
                   >
-                    <b>NIGTH</b>
+                    <b>NIGTH<img src="./noche.png" alt="" class="ms-4 img-noche"></b>
                   </button>
                 </h2>
                 <div
@@ -290,26 +314,22 @@
       >
       <div class=" d-flex flex-column justify-content-center mt-3 ">
         <div class="d-flex justify-content-evenly ">
+          
           <div>
-            <img src="./sol.png" alt="">
-          </div>
-          <div>
-            <div class="border p-2 m-2 bg-secondary text-white rounded ">
+            <div class="border p-2 m-2 bg-primary text-white rounded ">
               <span id="ubicacion" class="fw-bold">Ubicacion: </span><span id="ubicacion3">Zamora</span><br>
             </div>
-            <div class="border p-2 m-2 bg-secondary text-white rounded ">
-              <span id="fecha" class="fw-bold">Fecha: </span><span id="fecha3">Zamora</span>
+            <div class="border p-2 m-2 bg-primary text-white rounded ">
+              <span id="fecha" class="fw-bold"><img src="./fecha.png" alt="" class="me-2 img-noche">Fecha: </span><span id="fecha3">Zamora</span>
             </div>
           </div>
+          
           <div>
-            <img src="./nubes.png" alt="" >
-          </div>
-          <div>
-            <div class="border p-2 m-2 bg-secondary text-white rounded ">
-              <span id="temperatura" class="fw-bold">Temperatura Max: </span><span id="temperatura3">Zamora</span><br>
+            <div class="border p-2 m-2 bg-primary text-white rounded ">
+              <span id="temperatura" class="fw-bold"><img src="./termo.png" alt="" class="img-noche">Temperatura Max: </span><span id="temperatura3">Zamora</span><br>
             </div>
-            <div class="border p-2 m-2 bg-secondary text-white rounded ">
-              <span id="unidad" class="fw-bold">Unidad: </span><span id="unidad3">Zamora</span>
+            <div class="border p-2 m-2 bg-primary text-white rounded ">
+              <span id="unidad" class="fw-bold"><img src="./unidad.png" alt="" class="me-1 img-noche">Unidad: </span><span id="unidad3">Zamora</span>
             </div>
 
           </div>
@@ -333,12 +353,12 @@
                   aria-expanded="true"
                   aria-controls="collapseOne"
                 >
-                  <b>DAY</b>
+                  <b>DAY<img src="./sol.png" alt="" class="ms-4 img-logo"> </b>
                 </button>
               </h2>
               <div
                 id="collapseOne"
-                class="accordion-collapse collapse show "
+                class="accordion-collapse collapse  "
                 data-bs-parent="#accordionExample"
               >
                 <div id="day3" class="accordion-body  " >
@@ -356,7 +376,7 @@
                   aria-expanded="false"
                   aria-controls="collapseTwo"
                 >
-                  <b>NIGTH</b>
+                  <b>NIGTH<img src="./noche.png" alt="" class="ms-4 img-noche"></b>
                 </button>
               </h2>
               <div
@@ -388,26 +408,22 @@
       >
       <div class=" d-flex flex-column justify-content-center mt-3 ">
         <div class="d-flex justify-content-evenly ">
+          
           <div>
-            <img src="./sol.png" alt="">
-          </div>
-          <div>
-            <div class="border p-2 m-2 bg-secondary text-white rounded ">
+            <div class="border p-2 m-2 bg-primary text-white rounded ">
               <span id="ubicacion" class="fw-bold">Ubicacion: </span><span id="ubicacion4">Zamora</span><br>
             </div>
-            <div class="border p-2 m-2 bg-secondary text-white rounded ">
-              <span id="fecha" class="fw-bold">Fecha: </span><span id="fecha4">Zamora</span>
+            <div class="border p-2 m-2 bg-primary text-white rounded ">
+              <span id="fecha" class="fw-bold"><img src="./fecha.png" alt="" class="me-2 img-noche">Fecha: </span><span id="fecha4">Zamora</span>
             </div>
           </div>
+         
           <div>
-            <img src="./nubes.png" alt="" >
-          </div>
-          <div>
-            <div class="border p-2 m-2 bg-secondary text-white rounded ">
-              <span id="temperatura" class="fw-bold">Temperatura Max: </span><span id="temperatura4">Zamora</span><br>
+            <div class="border p-2 m-2 bg-primary text-white rounded ">
+              <span id="temperatura" class="fw-bold"><img src="./termo.png" alt="" class="img-noche">Temperatura Max: </span><span id="temperatura4">Zamora</span><br>
             </div>
-            <div class="border p-2 m-2 bg-secondary text-white rounded ">
-              <span id="unidad" class="fw-bold">Unidad: </span><span id="unidad4">Zamora</span>
+            <div class="border p-2 m-2 bg-primary text-white rounded ">
+              <span id="unidad" class="fw-bold"><img src="./unidad.png" alt="" class="me-1 img-noche">Unidad: </span><span id="unidad4">Zamora</span>
             </div>
 
           </div>
@@ -431,12 +447,12 @@
                   aria-expanded="true"
                   aria-controls="collapseOne"
                 >
-                  <b>DAY</b>
+                  <b>DAY<img src="./sol.png" alt="" class="ms-4 img-logo"></b>
                 </button>
               </h2>
               <div
                 id="collapseOne"
-                class="accordion-collapse collapse show "
+                class="accordion-collapse collapse  "
                 data-bs-parent="#accordionExample"
               >
                 <div id="day4" class="accordion-body  " >
@@ -454,7 +470,7 @@
                   aria-expanded="false"
                   aria-controls="collapseTwo"
                 >
-                  <b>NIGTH</b>
+                  <b>NIGTH<img src="./noche.png" alt="" class="ms-4 img-noche"></b>
                 </button>
               </h2>
               <div
@@ -486,26 +502,22 @@
       >
       <div class=" d-flex flex-column justify-content-center mt-3 ">
         <div class="d-flex justify-content-evenly ">
+          
           <div>
-            <img src="./sol.png" alt="">
-          </div>
-          <div>
-            <div class="border p-2 m-2 bg-secondary text-white rounded ">
+            <div class="border p-2 m-2 bg-primary text-white rounded ">
               <span id="ubicacion" class="fw-bold">Ubicacion: </span><span id="ubicacion5">Zamora</span><br>
             </div>
-            <div class="border p-2 m-2 bg-secondary text-white rounded ">
-              <span id="fecha" class="fw-bold">Fecha: </span><span id="fecha5">Zamora</span>
+            <div class="border p-2 m-2 bg-primary text-white rounded ">
+              <span id="fecha" class="fw-bold"><img src="./fecha.png" alt="" class="me-2 img-noche">Fecha: </span><span id="fecha5">Zamora</span>
             </div>
           </div>
+         
           <div>
-            <img src="./nubes.png" alt="" >
-          </div>
-          <div>
-            <div class="border p-2 m-2 bg-secondary text-white rounded ">
-              <span id="temperatura" class="fw-bold">Temperatura Max: </span><span id="temperatura5">Zamora</span><br>
+            <div class="border p-2 m-2 bg-primary text-white rounded ">
+              <span id="temperatura" class="fw-bold"><img src="./termo.png" alt="" class="img-noche">Temperatura Max: </span><span id="temperatura5">Zamora</span><br>
             </div>
-            <div class="border p-2 m-2 bg-secondary text-white rounded ">
-              <span id="unidad" class="fw-bold">Unidad: </span><span id="unidad5">Zamora</span>
+            <div class="border p-2 m-2 bg-primary text-white rounded ">
+              <span id="unidad" class="fw-bold"><img src="./unidad.png" alt="" class="me-1 img-noche">Unidad: </span><span id="unidad5">Zamora</span>
             </div>
 
           </div>
@@ -529,12 +541,12 @@
                   aria-expanded="true"
                   aria-controls="collapseOne"
                 >
-                  <b>DAY</b>
+                  <b>DAY<img src="./sol.png" alt="" class="ms-4 img-logo"></b>
                 </button>
               </h2>
               <div
                 id="collapseOne"
-                class="accordion-collapse collapse show "
+                class="accordion-collapse collapse "
                 data-bs-parent="#accordionExample"
               >
                 <div id="day5" class="accordion-body  " >
@@ -552,7 +564,7 @@
                   aria-expanded="false"
                   aria-controls="collapseTwo"
                 >
-                  <b>NIGTH</b>
+                  <b>NIGTH<img src="./noche.png" alt="" class="ms-4 img-noche"></b>
                 </button>
               </h2>
               <div
@@ -571,6 +583,8 @@
         </div>
       </div>
     </div>
+
+    <div class="container text-center mt-4"><h6>Pagina del tiempo, por Raúl Ferrero</h6></div>
 
     <script src="./peitcion.js"></script>
   </body>
