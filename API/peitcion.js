@@ -1,4 +1,23 @@
-const url = 'http://dataservice.accuweather.com/forecasts/v1/daily/5day/303121?apikey=%0914wSpECtEQGFOurv9WiciZZgEqgqMhC3&language=es-es';
+const url = 'http://dataservice.accuweather.com/forecasts/v1/daily/5day/303121?apikey=%0914wSpECtEQGFOurv9WiciZZgEqgqMhC3&language=es-es';  //Pronostico 5 dias
+// Obtener la fecha actual
+var fechaActual = new Date();
+var diasSemana = ['Domingo', 'Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado'];
+var numeroDia = fechaActual.getDay();
+var dia1 = diasSemana[numeroDia];
+var dia2 = diasSemana[(numeroDia+1)% 7];
+var dia3 = diasSemana[(numeroDia+2)% 7];
+var dia4 = diasSemana[(numeroDia+3)% 7];
+var dia5 = diasSemana[(numeroDia+4)% 7];
+// Mostrar el resultado
+console.log('Hoy es ' + dia1);
+
+//Poner dia de la semana actual al pronostico
+document.getElementById('nav-dia1-tab').innerText = dia1;
+document.getElementById('nav-dia2-tab').innerText = dia2;
+document.getElementById('nav-dia3-tab').innerText = dia3;
+document.getElementById('nav-dia4-tab').innerText = dia4;
+document.getElementById('nav-dia5-tab').innerText = dia5;
+
 
 // Dia 1
 const fecha1 = document.getElementById('fecha1');
@@ -79,12 +98,7 @@ fetch(url)
     temperatura5.innerHTML = data.DailyForecasts[4].Temperature.Maximum.Value;
     unidad5.innerHTML = data.DailyForecasts[4].Temperature.Maximum.Unit;
     day5.innerHTML = data.DailyForecasts[4].Day.IconPhrase;
-    nigth5.innerHTML = data.DailyForecasts[4].Night.IconPhrase;
-
-
-
-
-    
+    nigth5.innerHTML = data.DailyForecasts[4].Night.IconPhrase; 
   })
   .catch(error => {
     // Manejar errores de red o del servidor
