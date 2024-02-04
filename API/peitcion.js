@@ -76,31 +76,31 @@ fetch(url)
     console.log(data);
 
     // Dia 1
-    fecha1.innerHTML = data.DailyForecasts[0].Date;
+    fecha1.innerHTML = data.DailyForecasts[0].Date.split("T")[0];
     temperatura1.innerHTML = pasarCelsius(data.DailyForecasts[0].Temperature.Maximum.Value);
     min1.innerHTML = pasarCelsius(data.DailyForecasts[0].Temperature.Minimum.Value);
     day1.innerHTML = data.DailyForecasts[0].Day.IconPhrase;
     nigth1.innerHTML = data.DailyForecasts[0].Night.IconPhrase;
     // Dia 2
-    fecha2.innerHTML = data.DailyForecasts[1].Date;
+    fecha2.innerHTML = data.DailyForecasts[1].Date.split("T")[0];
     temperatura2.innerHTML = pasarCelsius(data.DailyForecasts[1].Temperature.Maximum.Value);
     min2.innerHTML = pasarCelsius(data.DailyForecasts[1].Temperature.Minimum.Value);
     day2.innerHTML = data.DailyForecasts[1].Day.IconPhrase;
     nigth2.innerHTML = data.DailyForecasts[1].Night.IconPhrase;
     // Dia 3
-    fecha3.innerHTML = data.DailyForecasts[2].Date;
+    fecha3.innerHTML = data.DailyForecasts[2].Date.split("T")[0];
     temperatura3.innerHTML = pasarCelsius(data.DailyForecasts[2].Temperature.Maximum.Value);
     min3.innerHTML = pasarCelsius(data.DailyForecasts[2].Temperature.Minimum.Value);
     day3.innerHTML = data.DailyForecasts[2].Day.IconPhrase;
     nigth3.innerHTML = data.DailyForecasts[2].Night.IconPhrase;
     // Dia 4
-    fecha4.innerHTML = data.DailyForecasts[3].Date;
+    fecha4.innerHTML = data.DailyForecasts[3].Date.split("T")[0];
     temperatura4.innerHTML = pasarCelsius(data.DailyForecasts[3].Temperature.Maximum.Value);
     min4.innerHTML = pasarCelsius(data.DailyForecasts[3].Temperature.Minimum.Value);
     day4.innerHTML = data.DailyForecasts[3].Day.IconPhrase;
     nigth4.innerHTML = data.DailyForecasts[3].Night.IconPhrase;
     // Dia 5
-    fecha5.innerHTML = data.DailyForecasts[4].Date;
+    fecha5.innerHTML = data.DailyForecasts[4].Date.split("T")[0];
     temperatura5.innerHTML = pasarCelsius(data.DailyForecasts[4].Temperature.Maximum.Value);
     min5.innerHTML = pasarCelsius(data.DailyForecasts[4].Temperature.Minimum.Value);
     day5.innerHTML = data.DailyForecasts[4].Day.IconPhrase;
