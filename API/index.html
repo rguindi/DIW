@@ -94,6 +94,13 @@
     </header>
     <main>
       <div class="container-sm mt-4 shadow p-3 bg-secondary-subtle rounded-5  ">
+        <label for="tema" class="fw-bold m-2">Elige un tema</label>
+        <select name="tema" id="tema" class="form-select">
+          <option value="claro" id="azul">Azul</option>
+          <option value="oscuro" id="oscuro">Oscuro</option>
+        </select>
+      </div>
+      <div class="container-sm mt-4 shadow p-3 bg-secondary-subtle rounded-5  ">
         <div class="d-flex justify-content-evenly mt-3">
           <div>
             <input type="radio" name="sel" id="hoy" /><label
@@ -222,10 +229,10 @@
                   <div class="border p-2 m-2 bg-primary text-white rounded">
                     <span id="unidad" class="fw-bold"
                       ><img
-                        src="./unidad.png"
+                        src="./termo.png"
                         alt=""
                         class="me-1 img-noche"
-                      />Unidad: </span
+                      />Temperatura Min: </span
                     ><span id="unidad1">Zamora</span>
                   </div>
                 </div>
@@ -308,14 +315,20 @@
                       <div class="row">
 
                         <div class="col-6">
-                          <div>
-                            <span>Unidad: </span><span class="unidad">Texto</span>
+                          <div class="fw-bold border-1 border-dark p-2 m-2 rounded shadow  border">
+                            <span  >Unidad: </span><span id="u1">Texto</span>
                           </div>
-                          <div>Inf2</div>
+                          <div class="fw-bold border-1 border-dark m-2 p-2 rounded shadow  border">
+                            <span  >Raul Ferrero: </span><span id="gf"><i class=" ms-2 bi bi-emoji-smile"></i></span>
+                          </div>
                         </div>
                         <div class="col-6">
-                          <div>Inf3</div>
-                          <div>Inf4</div>
+                          <div class="fw-bold border-1 border-dark p-2 m-2 rounded shadow  border">
+                            <span  ><i class="bi bi-cloud-rain-heavy me-2"></i>Lluvia Día: </span><span id="lld1">Texto</span>
+                          </div>
+                          <div class="fw-bold border-1 border-dark m-2 p-2 rounded shadow  border">
+                            <span  ><i class="bi bi-cloud-rain-heavy me-2"></i>Lluvia noche: </span><span id="lln1">Texto</span>
+                          </div>
                         </div>
 
                       </div>
@@ -371,10 +384,10 @@
                     <div class="border p-2 m-2 bg-primary text-white rounded">
                       <span id="unidad" class="fw-bold"
                         ><img
-                          src="./unidad.png"
+                          src="./termo.png"
                           alt=""
                           class="me-1 img-noche"
-                        />Unidad: </span
+                        />Temperatura Min:: </span
                       ><span id="unidad2">Zamora</span>
                     </div>
                   </div>
@@ -434,6 +447,50 @@
                       <div id="nigth2" class="accordion-body"></div>
                     </div>
                   </div>
+                  <div class="accordion-item mb-2">
+                    <h2 class="accordion-header">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseTres"
+                        aria-expanded="true"
+                        aria-controls="collapseTres"
+                      >
+                        <b
+                          >OTRA INFORMACION<i class="bi ms-3 bi-info-circle fs-3"></i></b>
+                      </button>
+                    </h2>
+                    <div
+                      id="collapseTres"
+                      class="accordion-collapse collapse"
+                      data-bs-parent="#accordionExample"
+                    >
+                      <div id="nigth1" class="accordion-body">
+                        <div class="row">
+  
+                          <div class="col-6">
+                            <div class="fw-bold border-1 border-dark p-2 m-2 rounded shadow  border">
+                              <span  >Unidad: </span><span id="u2">Texto</span>
+                            </div>
+                            <div class="fw-bold border-1 border-dark m-2 p-2 rounded shadow  border">
+                              <span  >Raul Ferrero: </span><span id="gf"><i class=" ms-2 bi bi-emoji-smile"></i></span>
+                            </div>
+                          </div>
+                          <div class="col-6">
+                            <div class="fw-bold border-1 border-dark p-2 m-2 rounded shadow  border">
+                              <span  ><i class="bi bi-cloud-rain-heavy me-2"></i>Lluvia Día: </span><span id="lld2">Texto</span>
+                            </div>
+                            <div class="fw-bold border-1 border-dark m-2 p-2 rounded shadow  border">
+                              <span  ><i class="bi bi-cloud-rain-heavy me-2"></i>Lluvia noche: </span><span id="lln2">Texto</span>
+                            </div>
+                          </div>
+  
+                        </div>
+  
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -483,10 +540,10 @@
                     <div class="border p-2 m-2 bg-primary text-white rounded">
                       <span id="unidad" class="fw-bold"
                         ><img
-                          src="./unidad.png"
+                          src="./termo.png"
                           alt=""
                           class="me-1 img-noche"
-                        />Unidad: </span
+                        />Temperatura Min:: </span
                       ><span id="unidad3">Zamora</span>
                     </div>
                   </div>
@@ -550,6 +607,50 @@
                       <div id="nigth3" class="accordion-body"></div>
                     </div>
                   </div>
+                  <div class="accordion-item mb-2">
+                    <h2 class="accordion-header">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseTres"
+                        aria-expanded="true"
+                        aria-controls="collapseTres"
+                      >
+                        <b
+                          >OTRA INFORMACION<i class="bi ms-3 bi-info-circle fs-3"></i></b>
+                      </button>
+                    </h2>
+                    <div
+                      id="collapseTres"
+                      class="accordion-collapse collapse"
+                      data-bs-parent="#accordionExample"
+                    >
+                      <div id="nigth1" class="accordion-body">
+                        <div class="row">
+  
+                          <div class="col-6">
+                            <div class="fw-bold border-1 border-dark p-2 m-2 rounded shadow  border">
+                              <span  >Unidad: </span><span id="u1">Texto</span>
+                            </div>
+                            <div class="fw-bold border-1 border-dark m-2 p-2 rounded shadow  border">
+                              <span  >Raul Ferrero: </span><span id="gf"><i class=" ms-2 bi bi-emoji-smile"></i></span>
+                            </div>
+                          </div>
+                          <div class="col-6">
+                            <div class="fw-bold border-1 border-dark p-2 m-2 rounded shadow  border">
+                              <span  ><i class="bi bi-cloud-rain-heavy me-2"></i>Lluvia Día: </span><span id="lld1">Texto</span>
+                            </div>
+                            <div class="fw-bold border-1 border-dark m-2 p-2 rounded shadow  border">
+                              <span  ><i class="bi bi-cloud-rain-heavy me-2"></i>Lluvia noche: </span><span id="lln1">Texto</span>
+                            </div>
+                          </div>
+  
+                        </div>
+  
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -598,10 +699,10 @@
                     <div class="border p-2 m-2 bg-primary text-white rounded">
                       <span id="unidad" class="fw-bold"
                         ><img
-                          src="./unidad.png"
+                          src="./termo.png"
                           alt=""
                           class="me-1 img-noche"
-                        />Unidad: </span
+                        />Temperatura Min:: </span
                       ><span id="unidad4">Zamora</span>
                     </div>
                   </div>
@@ -661,6 +762,50 @@
                       <div id="nigth4" class="accordion-body"></div>
                     </div>
                   </div>
+                  <div class="accordion-item mb-2">
+                    <h2 class="accordion-header">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseTres"
+                        aria-expanded="true"
+                        aria-controls="collapseTres"
+                      >
+                        <b
+                          >OTRA INFORMACION<i class="bi ms-3 bi-info-circle fs-3"></i></b>
+                      </button>
+                    </h2>
+                    <div
+                      id="collapseTres"
+                      class="accordion-collapse collapse"
+                      data-bs-parent="#accordionExample"
+                    >
+                      <div id="nigth1" class="accordion-body">
+                        <div class="row">
+  
+                          <div class="col-6">
+                            <div class="fw-bold border-1 border-dark p-2 m-2 rounded shadow  border">
+                              <span  >Unidad: </span><span id="u1">Texto</span>
+                            </div>
+                            <div class="fw-bold border-1 border-dark m-2 p-2 rounded shadow  border">
+                              <span  >Raul Ferrero: </span><span id="gf"><i class=" ms-2 bi bi-emoji-smile"></i></span>
+                            </div>
+                          </div>
+                          <div class="col-6">
+                            <div class="fw-bold border-1 border-dark p-2 m-2 rounded shadow  border">
+                              <span  ><i class="bi bi-cloud-rain-heavy me-2"></i>Lluvia Día: </span><span id="lld1">Texto</span>
+                            </div>
+                            <div class="fw-bold border-1 border-dark m-2 p-2 rounded shadow  border">
+                              <span  ><i class="bi bi-cloud-rain-heavy me-2"></i>Lluvia noche: </span><span id="lln1">Texto</span>
+                            </div>
+                          </div>
+  
+                        </div>
+  
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -709,10 +854,10 @@
                     <div class="border p-2 m-2 bg-primary text-white rounded">
                       <span id="unidad" class="fw-bold"
                         ><img
-                          src="./unidad.png"
+                          src="./termo.png"
                           alt=""
                           class="me-1 img-noche"
-                        />Unidad: </span
+                        />Temperatura Min:: </span
                       ><span id="unidad5">Zamora</span>
                     </div>
                   </div>
@@ -770,6 +915,50 @@
                       data-bs-parent="#accordionExample"
                     >
                       <div id="nigth5" class="accordion-body"></div>
+                    </div>
+                  </div>
+                  <div class="accordion-item mb-2">
+                    <h2 class="accordion-header">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseTres"
+                        aria-expanded="true"
+                        aria-controls="collapseTres"
+                      >
+                        <b
+                          >OTRA INFORMACION<i class="bi ms-3 bi-info-circle fs-3"></i></b>
+                      </button>
+                    </h2>
+                    <div
+                      id="collapseTres"
+                      class="accordion-collapse collapse"
+                      data-bs-parent="#accordionExample"
+                    >
+                      <div id="nigth1" class="accordion-body">
+                        <div class="row">
+  
+                          <div class="col-6">
+                            <div class="fw-bold border-1 border-dark p-2 m-2 rounded shadow  border">
+                              <span  >Unidad: </span><span id="u1">Texto</span>
+                            </div>
+                            <div class="fw-bold border-1 border-dark m-2 p-2 rounded shadow  border">
+                              <span  >Raul Ferrero: </span><span id="gf"><i class=" ms-2 bi bi-emoji-smile"></i></span>
+                            </div>
+                          </div>
+                          <div class="col-6">
+                            <div class="fw-bold border-1 border-dark p-2 m-2 rounded shadow  border">
+                              <span  ><i class="bi bi-cloud-rain-heavy me-2"></i>Lluvia Día: </span><span id="lld1">Texto</span>
+                            </div>
+                            <div class="fw-bold border-1 border-dark m-2 p-2 rounded shadow  border">
+                              <span  ><i class="bi bi-cloud-rain-heavy me-2"></i>Lluvia noche: </span><span id="lln1">Texto</span>
+                            </div>
+                          </div>
+  
+                        </div>
+  
+                      </div>
                     </div>
                   </div>
                 </div>

@@ -28,36 +28,40 @@ document.getElementById('nav-dia5-tab').innerText = dia5;
 // Dia 1
 const fecha1 = document.getElementById('fecha1');
 const temperatura1 = document.getElementById('temperatura1');
-const min1 = document.getElementById('min1');
+const min1 = document.getElementById('unidad1');
 const day1 = document.getElementById('day1');
 const nigth1 = document.getElementById('nigth1');
 // Dia 2
 const fecha2 = document.getElementById('fecha2');
 const temperatura2 = document.getElementById('temperatura2');
-const min2 = document.getElementById('min2');
+const min2 = document.getElementById('unidad2');
 const day2 = document.getElementById('day2');
 const nigth2 = document.getElementById('nigth2');
 // Dia 3
 const fecha3 = document.getElementById('fecha3');
 const temperatura3 = document.getElementById('temperatura3');
-const min3 = document.getElementById('min3');
+const min3 = document.getElementById('unidad3');
 const day3 = document.getElementById('day3');
 const nigth3 = document.getElementById('nigth3');
 // Dia 4
 const fecha4 = document.getElementById('fecha4');
 const temperatura4 = document.getElementById('temperatura4');
-const min4 = document.getElementById('min4');
+const min4 = document.getElementById('unidad4');
 const day4 = document.getElementById('day4');
 const nigth4 = document.getElementById('nigth4');
 // Dia 5
 const fecha5 = document.getElementById('fecha5');
 const temperatura5 = document.getElementById('temperatura5');
-const min5 = document.getElementById('min5');
+const min5 = document.getElementById('unidad5');
 const day5 = document.getElementById('day5');
 const nigth5 = document.getElementById('nigth5');
 
-
-
+//
+let unidad1 = document.getElementById('unidad1');
+let unidad2 = document.getElementById('unidad2');
+let unidad3 = document.getElementById('unidad3');
+let unidad4 = document.getElementById('unidad4');
+let unidad5 = document.getElementById('unidad5');
 
 
 // Realizar la solicitud utilizando fetch
@@ -111,4 +115,17 @@ fetch(url)
     console.error('Error:', error);
   });
 
-  
+
+// Cambiar el tema
+let tema = document.getElementById('tema');
+let main = document.getElementsByTagName('main')[0];
+
+tema.addEventListener('change', function(){
+  if (tema.value === "oscuro") {
+    main.style.backgroundColor = "black";
+    main.style.color = "white";
+  } else {
+    main.style.backgroundColor = "white";
+    main.style.color = "black";
+  }
+});
